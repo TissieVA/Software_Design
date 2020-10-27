@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="lab2" version="4">
+  <OBJECT>
+    <ID name="lab2" mc="Standard.Package" uid="0b70b0e4-ece4-4045-93f5-a8309111556a"/>
+    <PID name="Lab2" mc="Standard.Project" uid="db95694b-bae0-4261-908b-ae5ffee76692"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[lab2]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="abstractions" mc="Standard.Package" uid="f72424f2-655f-4e19-ba60-44b73abb60e1"/>
+        <COMPID name="inheritance" mc="Standard.Package" uid="09af4eae-5050-4018-a99d-f2897023627d"/>
+        <COMPID name="interfaces" mc="Standard.Package" uid="2a234d0a-5587-4080-a3f5-3a8f97e16642"/>
+        <COMPID name="relations" mc="Standard.Package" uid="85e9cc0d-5c77-4b6c-bac7-739b94ad90a3"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

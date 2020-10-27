@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="interfaces" version="4">
+  <OBJECT>
+    <ID name="interfaces" mc="Standard.Package" uid="2a234d0a-5587-4080-a3f5-3a8f97e16642"/>
+    <PID name="lab2" mc="Standard.Package" uid="0b70b0e4-ece4-4045-93f5-a8309111556a"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[interfaces]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="VolumeDevice" mc="Standard.Interface" uid="6009f587-95b7-44b4-aa16-aba36bf4a817"/>
+        <COMPID name="Remote" mc="Standard.Class" uid="8f9e4fb6-6962-4e01-b3ab-257048e8bcbc"/>
+        <COMPID name="VHSPlayer" mc="Standard.Class" uid="f69e519c-9a82-4eb9-83c9-9dc9c0f9abb0"/>
+        <COMPID name="Wii" mc="Standard.Class" uid="8777806f-105e-4fae-af3d-8a6ae9e354e0"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Class_VolumeDevice" mc="Standard.ClassDiagram" uid="3e082ac3-c7bc-4bb1-a4f2-37d246264684"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

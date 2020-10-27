@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Lab2" version="4">
+  <OBJECT>
+    <ID name="Lab2" mc="Infrastructure.DiagramSet" uid="77813ace-b524-407e-8ec4-3f2d8a62f13d"/>
+    <PID name="Lab2" mc="Standard.Project" uid="db95694b-bae0-4261-908b-ae5ffee76692"/>
+    <ATTRIBUTES>
+      <ATT name="Name"><![CDATA[Lab2]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

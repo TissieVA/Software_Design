@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="interfaces" version="4">
+  <OBJECT>
+    <ID name="interfaces" mc="Standard.Package" uid="2a234d0a-5587-4080-a3f5-3a8f97e16642"/>
+    <PID name="lab2" mc="Standard.Package" uid="0b70b0e4-ece4-4045-93f5-a8309111556a"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[interfaces]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Remote" mc="Standard.Class" uid="e7903e0c-99f0-49ab-b7f4-9c399b4bda1c"/>
+        <COMPID name="VolumeDevices" mc="Standard.Interface" uid="41818300-b16d-480d-99e8-b1a3350acedc"/>
+        <COMPID name="TelenetDigibox" mc="Standard.Class" uid="83ac12e9-4e8d-4d1d-b8ec-61b451b51c97"/>
+        <COMPID name="BluetoothSpeaker" mc="Standard.Class" uid="6490d7db-9926-481d-accc-97f0e8af6452"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Class_VolumeDevice" mc="Standard.ClassDiagram" uid="3e082ac3-c7bc-4bb1-a4f2-37d246264684"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

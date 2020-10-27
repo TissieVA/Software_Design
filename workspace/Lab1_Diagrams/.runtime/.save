@@ -1,0 +1,7 @@
+#Sat Oct 24 15:33:39 CEST 2020
+org.modelio.app.diagram.editor.OpenedDiagrams2='UC_Diagram' {314e9a19-b124-4b87-bebe-1bd24ab85282} Standard.UseCaseDiagram
+org.modelio.app.diagram.editor.OpenedDiagrams1='Sequence_BookRoom' {9658a756-d8bd-457f-bd3c-224f28d00295} Standard.SequenceDiagram
+org.modelio.app.diagram.editor.OpenedDiagrams0='Sequence_Availability' {896eda16-1ecb-452f-97fd-f1b2aa956f13} Standard.SequenceDiagram
+org.modelio.diagram.editor.OpenedDiagrams2='Sequence_BookRoom' {9658a756-d8bd-457f-bd3c-224f28d00295} Standard.SequenceDiagram
+org.modelio.diagram.editor.OpenedDiagrams1='Sequence_Availability' {896eda16-1ecb-452f-97fd-f1b2aa956f13} Standard.SequenceDiagram
+org.modelio.diagram.editor.OpenedDiagrams0='UC_Diagram' {314e9a19-b124-4b87-bebe-1bd24ab85282} Standard.UseCaseDiagram

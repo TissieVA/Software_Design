@@ -6,6 +6,7 @@ import employee.CustomerService;
 import employee.Employee;
 import employee.Manager;
 import employee.Programmer;
+import factory.EmployeeFactory;
 import observers.DatabaseUpdater;
 import observers.EntryPrintObserver;
 import observers.PrintObserver;
@@ -32,10 +33,11 @@ public class Main
         timedb.addObserver(new DatabaseUpdater());
         timedb.addObserver(new EntryPrintObserver());
         timedb.addObserver(new PrintObserver());
+        EmployeeFactory factory = new EmployeeFactory();
 
-        Employee e1 = new Programmer("Alice");
-        Employee e2 = new CustomerService("Bob");
-        Employee e3 = new Manager("Charlie");
+        Employee e1 = factory.getEmployee("Alice","Programmer");
+        Employee e2 = factory.getEmployee("Bob","CustomerService");
+        Employee e3 = factory.getEmployee("Charlie","Manager");
 
         register.checkIn(e1);
         register.checkIn(e2);

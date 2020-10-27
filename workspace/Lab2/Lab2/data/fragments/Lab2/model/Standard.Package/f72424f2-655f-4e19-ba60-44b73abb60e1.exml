@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="abstractions" version="4">
+  <OBJECT>
+    <ID name="abstractions" mc="Standard.Package" uid="f72424f2-655f-4e19-ba60-44b73abb60e1"/>
+    <PID name="lab2" mc="Standard.Package" uid="0b70b0e4-ece4-4045-93f5-a8309111556a"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[abstractions]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Shape" mc="Standard.Class" uid="2b0c3c9f-ee45-448c-9b56-5ed69b123ca4"/>
+        <COMPID name="Circle" mc="Standard.Class" uid="8790630a-f0a8-4344-8213-46e56f5dbf0c"/>
+        <COMPID name="Square" mc="Standard.Class" uid="0733bed0-e47c-4fa0-a150-ce7e16f08335"/>
+        <COMPID name="Main" mc="Standard.Class" uid="3a7ee2eb-c7aa-43b5-b3ef-269c534bc638"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Class_Shapes" mc="Standard.ClassDiagram" uid="c5bd6dad-2db1-48e9-805f-85a039762e4f"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

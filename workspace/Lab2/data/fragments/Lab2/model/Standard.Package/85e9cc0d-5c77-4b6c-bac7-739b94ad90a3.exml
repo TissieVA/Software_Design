@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="relations" version="4">
+  <OBJECT>
+    <ID name="relations" mc="Standard.Package" uid="85e9cc0d-5c77-4b6c-bac7-739b94ad90a3"/>
+    <PID name="lab2" mc="Standard.Package" uid="0b70b0e4-ece4-4045-93f5-a8309111556a"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[relations]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Wiper" mc="Standard.Interface" uid="7de7a997-b678-41cc-94fc-0506012ce815"/>
+        <COMPID name="FrontWiper" mc="Standard.Class" uid="a2ca711a-3895-404e-8010-6b26cd4afee5"/>
+        <COMPID name="BackWiper" mc="Standard.Class" uid="dbfc9dac-efa5-4da5-b0e3-50486ab350e1"/>
+        <COMPID name="Pedal" mc="Standard.Class" uid="6d0da4b9-9900-41b0-9e2d-4c70f263121c"/>
+        <COMPID name="Car" mc="Standard.Class" uid="b9fbdb6e-0cd4-4f76-a225-42c7d98b4c73"/>
+        <COMPID name="Main" mc="Standard.Class" uid="e2eae57f-f928-4ac3-abb5-d53c8055dda7"/>
+        <COMPID name="BreakPedal" mc="Standard.Class" uid="8756582e-bb9d-4141-9652-d704f06fae99"/>
+        <COMPID name="AccPedal" mc="Standard.Class" uid="451202fb-b8f7-4596-9587-55140c800937"/>
+        <COMPID name="Wheel" mc="Standard.Class" uid="48b5dde9-6845-4e48-94a7-38550ef37fd4"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Class_SimpleCar" mc="Standard.ClassDiagram" uid="5ca22841-8833-40e1-bc1f-8ee7f71f304c"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
