@@ -1,4 +1,4 @@
-package person;
+package ua.tijsva.sd.project.person;
 
 public class Person
 {

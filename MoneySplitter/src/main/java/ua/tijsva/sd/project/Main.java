@@ -1,6 +1,6 @@
-import database.Database;
-import database.PersonDB;
-import database.TicketDB;
+package ua.tijsva.sd.project;
+
+import ua.tijsva.sd.project.database.Database;
 
 public class Main
 {
@@ -17,7 +17,6 @@ public class Main
 
     void run()
     {
-        Database personDB = PersonDB.getInstance();
-        Database ticketDB = TicketDB.getInstance();
+
     }
 }

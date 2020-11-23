@@ -32,6 +32,7 @@ public class Main
         // CAUTION:
         // "factory" does not exist yet, you have to obtain it via the specific Factories
 
+        TeslaFactory factory = new FactoryProvider().getModelSFactory();
         // Via FactoryProvider: Get factory for Tesla Model S
         Tesla apollo = factory.getBlackCar("Apollo");
         Tesla athena = factory.getRedCar("Athena");
@@ -40,6 +41,7 @@ public class Main
         teslaList.add(athena);
 
         // Via FactoryProvider: Get factory for Tesla Model 3
+        factory = FactoryProvider.getModel3Factory();
         Tesla elon = factory.getRedCar("Elon");
         Tesla musk = factory.getBlackCar("Musk");
 
@@ -47,9 +49,11 @@ public class Main
         teslaList.add(musk);
 
         // Via FactoryProvider: Get factory for Tesla Model X
+        factory = FactoryProvider.getModel3Factory();
         Tesla olympus = factory.getRedCar("Olympus");
 
         // Via FactoryProvider: Get factory for Tesla Model Y
+        factory = FactoryProvider.getModelYFactory();
         Tesla zeus = factory.getBlackCar("Zeus");
 
         teslaList.add(olympus);
