@@ -1,5 +1,6 @@
 package ua.tijsva.sd.project.ticket;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.UUID;
 
@@ -54,4 +55,14 @@ public abstract class Ticket
         return indebted;
     }
 
+    public void setIndebted(HashMap<UUID, Double> indebted) {
+        this.indebted = indebted;
+    }
+
+    public void setIndebted(ArrayList<UUID> persons) {
+        for (UUID person: persons)
+        {
+            this.indebted.put(person,0.0);
+        }
+    }
 }

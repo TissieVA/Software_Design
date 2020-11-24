@@ -1,8 +1,11 @@
 package ua.tijsva.sd.project.person;
 
+import java.util.UUID;
+
 public class Person
 {
     private String name;
+    private UUID id;
     public Person(String name)
     {
         this.name = name;
@@ -14,5 +17,9 @@ public class Person
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public UUID getId() {
+        return id;
     }
 }
