@@ -3,6 +3,7 @@ package ua.tijsva.sd.project;
 import ua.tijsva.sd.project.database.Database;
 import ua.tijsva.sd.project.ticket.EqualTicketFactory;
 import ua.tijsva.sd.project.ticket.TicketFactory;
+import ua.tijsva.sd.project.ticket.UnequalTicketFactory;
 
 public class Main
 {
@@ -15,6 +16,7 @@ public class Main
     public Main()
     {
         TicketFactory etf = new EqualTicketFactory();
+        TicketFactory uetf = new UnequalTicketFactory();
     }
 
     void run()

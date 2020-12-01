@@ -60,9 +60,9 @@ public class EqualSplitTicketTest {
     {
         Person p4 = new Person("D");
         this.persons.add(p4);
-        Assert.assertEquals(this.t1.addIndebted(this.persons.get(3)),true);
+        Assert.assertEquals(true,this.t1.addIndebted(this.persons.get(3)));
         Assert.assertEquals(50.0,this.t1.getIndebted().get(this.persons.get(3).getId()),0.01);
-        //Assert.assertEquals(50.0,this.t1.getIndebted().get(this.persons.get(0).getId()),0.01);
+        Assert.assertEquals(50.0,this.t1.getIndebted().get(this.persons.get(0).getId()),0.01);
     }
 
 }
