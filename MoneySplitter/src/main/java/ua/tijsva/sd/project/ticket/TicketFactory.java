@@ -27,4 +27,14 @@ public abstract class TicketFactory
         return ticket;
     }
 
+    public static TicketFactory getEqualSplitTicketFactory()
+    {
+        return new EqualTicketFactory();
+    }
+
+    public static TicketFactory getUnequalSplitTicketFactory()
+    {
+        return new UnequalTicketFactory();
+    }
+
 }
