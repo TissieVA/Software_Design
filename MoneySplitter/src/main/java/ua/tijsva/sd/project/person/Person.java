@@ -6,8 +6,10 @@ public class Person
 {
     private String name;
     private UUID id;
+
     public Person(String name)
     {
+        this.id = UUID.randomUUID();
         this.name = name;
     }
 

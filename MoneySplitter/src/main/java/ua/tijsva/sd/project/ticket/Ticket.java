@@ -1,8 +1,12 @@
 package ua.tijsva.sd.project.ticket;
 
+import ua.tijsva.sd.project.person.Person;
+
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.UUID;
+import java.util.stream.Collectors;
 
 public abstract class Ticket
 {
@@ -17,6 +21,7 @@ public abstract class Ticket
         this.paidPerson = paidPerson;
         this.price = price;
         this.id = UUID.randomUUID();
+        this.indebted = new HashMap<>();
     }
 
     public String getTicketType() {
@@ -31,24 +36,12 @@ public abstract class Ticket
         return id;
     }
 
-    public void setId(UUID id) {
-        this.id = id;
-    }
-
     public UUID getPaidPerson() {
         return paidPerson;
     }
 
-    public void setPaidPerson(UUID paidPerson) {
-        this.paidPerson = paidPerson;
-    }
-
     public double getPrice() {
         return price;
-    }
-
-    public void setPrice(double price) {
-        this.price = price;
     }
 
     public HashMap<UUID, Double> getIndebted() {
@@ -59,10 +52,27 @@ public abstract class Ticket
         this.indebted = indebted;
     }
 
-    public void setIndebted(ArrayList<UUID> persons) {
+    public void setIndebted(ArrayList<UUID> persons)
+    {
+        this.indebted.clear();
         for (UUID person: persons)
         {
             this.indebted.put(person,0.0);
         }
+    }
+
+    public Boolean addIndebted(Person person)
+    {
+        if(this.indebted.containsKey(person))
+            return false;
+
+        this.indebted.put(person.getId(),0.0);
+        return true;
+    }
+
+    public void setIndebted(List<Person> persons)
+    {
+        ArrayList<UUID> UUIDlist = (ArrayList<UUID>) persons.stream().map(Person::getId).collect(Collectors.toList());
+        this.setIndebted(UUIDlist);
     }
 }
