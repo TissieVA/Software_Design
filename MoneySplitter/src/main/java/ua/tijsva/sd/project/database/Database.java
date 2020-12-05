@@ -3,11 +3,10 @@ package ua.tijsva.sd.project.database;
 import ua.tijsva.sd.project.person.Person;
 import ua.tijsva.sd.project.ticket.Ticket;
 
-import java.util.HashMap;
-import java.util.Observable;
-import java.util.UUID;
+import java.util.*;
+import java.util.function.Consumer;
 
-public class Database<T> extends Observable
+public class Database<T> extends Observable implements Iterable<T>
 {
     static Database<Person> personDB;
     static Database<Ticket> ticketDB;
@@ -46,5 +45,23 @@ public class Database<T> extends Observable
             ticketDB = new Database<>();
         }
         return ticketDB;
+    }
+
+    @Override
+    public Iterator<T> iterator()
+    {
+        return null;
+    }
+
+    @Override
+    public void forEach(Consumer<? super T> action)
+    {
+        ;
+    }
+
+    @Override
+    public Spliterator<T> spliterator()
+    {
+        return null;
     }
 }
