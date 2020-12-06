@@ -44,24 +44,25 @@ public class Database<T> extends Observable implements Iterable<T>
         {
             ticketDB = new Database<>();
         }
+
         return ticketDB;
     }
 
     @Override
     public Iterator<T> iterator()
     {
-        return null;
+        return this.dbMap.values().iterator();
     }
 
     @Override
     public void forEach(Consumer<? super T> action)
     {
-        ;
+       this.dbMap.values().forEach(action);
     }
 
     @Override
     public Spliterator<T> spliterator()
     {
-        return null;
+        return this.dbMap.values().spliterator();
     }
 }
