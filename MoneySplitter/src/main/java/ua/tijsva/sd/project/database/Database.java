@@ -48,6 +48,7 @@ public class Database<T> extends Observable implements Iterable<T>
         return ticketDB;
     }
 
+
     @Override
     public Iterator<T> iterator()
     {
