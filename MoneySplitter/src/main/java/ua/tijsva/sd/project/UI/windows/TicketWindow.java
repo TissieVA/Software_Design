@@ -15,6 +15,9 @@ public class TicketWindow extends JFrame implements ActionListener
 {
     protected JTextField textfield;
     private Controller controller;
+    private GridBagConstraints c = new GridBagConstraints();
+    private EqualSplitPanel esp = new EqualSplitPanel();
+
 
     public TicketWindow(Controller controller)
     {
@@ -56,7 +59,6 @@ public class TicketWindow extends JFrame implements ActionListener
         addComponent(new JSeparator(JSeparator.HORIZONTAL),4,0,5,1,inset, true);
 
         JRadioButton equalTicketButton = new JRadioButton("Equal Split Ticket");
-        equalTicketButton.setSelected(true);
         JRadioButton unEqualTicketButton = new JRadioButton("Unequal Split Ticket");
         ButtonGroup group = new ButtonGroup();
         group.add(equalTicketButton);
@@ -67,18 +69,15 @@ public class TicketWindow extends JFrame implements ActionListener
         unEqualTicketButton.addActionListener(this);
 
 
-        addComponent(new EqualSplitPanel(),7,0,5,1,inset,false);
-
         JButton confirmButton = new JButton("Create Ticket");
         confirmButton.addActionListener(listener -> System.out.println(paidPersonComboBox.getSelectedItem()));
-        addComponent(confirmButton,7,4,1,1,inset,false);
+        addComponent(confirmButton,8,4,1,1,inset,false);
 
 
     }
 
     private void addComponent(Component component,int row, int column, int width, int height, Insets insets, boolean fill)
     {
-        GridBagConstraints c = new GridBagConstraints();
         c.gridx = column;
         c.gridy = row;
         c.gridwidth = width;
@@ -95,6 +94,13 @@ public class TicketWindow extends JFrame implements ActionListener
     @Override
     public void actionPerformed(ActionEvent e)
     {
+        //TODO: add Unequal split panel, remove it at if statemant and add it at else if statement
+        String radioButtonString = e.getActionCommand();
+        if(radioButtonString.equals("Equal Split Ticket"))
+            addComponent(esp,7,0,5,1,new Insets(10,10,10,10),false);
+        else if(radioButtonString.equals("Unequal Split Ticket"))
+            this.remove(esp);
+        SwingUtilities.updateComponentTreeUI(this);
 
     }
 }

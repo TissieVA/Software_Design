@@ -8,7 +8,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
-public class EqualSplitPanel extends JFrame implements ActionListener
+public class EqualSplitPanel extends JPanel implements ActionListener
 {
     public EqualSplitPanel()
     {
@@ -23,6 +23,9 @@ public class EqualSplitPanel extends JFrame implements ActionListener
         JComboBox<Object> personComboBox = new JComboBox<Object>( personArrayList.toArray());
         addComponent(personComboBox,1,0,1,1, inset, true);
 
+        JButton addPersonButton = new JButton("+");
+        addComponent(addPersonButton,2,0,1,1,inset,false);
+        addPersonButton.addActionListener(this);
 
     }
 
@@ -41,9 +44,16 @@ public class EqualSplitPanel extends JFrame implements ActionListener
         this.add(component, c);
     }
 
+    //TODO: make a method that creates an extra line for people to add to a ticket
+
+    public void extraPersonLine()
+    {
+        //TODO: create list of comboboxes
+    }
     @Override
     public void actionPerformed(ActionEvent e)
     {
+        System.out.println(e.getActionCommand());
 
     }
 }
