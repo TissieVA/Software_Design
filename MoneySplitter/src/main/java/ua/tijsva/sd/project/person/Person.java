@@ -13,6 +13,8 @@ public class Person
         this.name = name;
     }
 
+
+
     public String getName() {
         return name;
     }
@@ -23,5 +25,11 @@ public class Person
 
     public UUID getId() {
         return id;
+    }
+
+    @Override
+    public String toString()
+    {
+        return this.name;
     }
 }

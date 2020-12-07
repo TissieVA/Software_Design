@@ -44,4 +44,9 @@ public class DatabasePanel extends JPanel
         this.add(removeTicketButton,c);
     }
 
+    public void addTicketButtonListener()
+    {
+
+    }
+
 }
