@@ -1,5 +1,6 @@
 package ua.tijsva.sd.project;
 
+import ua.tijsva.sd.project.UI.UIFrame;
 import ua.tijsva.sd.project.database.Database;
 import ua.tijsva.sd.project.ticket.EqualTicketFactory;
 import ua.tijsva.sd.project.ticket.TicketFactory;
@@ -21,6 +22,7 @@ public class Main
 
     void run()
     {
-
+        UIFrame ui = new UIFrame();
+        ui.createAndShowGUI();
     }
 }
