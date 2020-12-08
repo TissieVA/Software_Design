@@ -19,21 +19,25 @@ public class Controller
 
     public Ticket createTicket(TicketFactory tf, String ticketType, UUID paidPerson, ArrayList<UUID> persons)
     {
-        Ticket t = tf.createTicket(ticketType, paidPerson, persons);
+        Ticket t = tf.createTicket(ticketType, paidPerson);
+        t.setIndebted(persons);
         Database.getTicketDB().add(UUID.randomUUID(),t);
         return t;
     }
 
     public Ticket createTicket(TicketFactory tf, String ticketType, Person paidPerson)
     {
-        Ticket t = tf.createTicket(ticketType, paidPerson);
+        Ticket t = tf.createTicket(ticketType, paidPerson.getId());
         Database.getTicketDB().add(UUID.randomUUID(), t);
         return t;
     }
 
     public Ticket createTicket(TicketFactory tf, String ticketType, Person paidPerson, ArrayList<UUID> persons)
     {
-        Ticket t = tf.createTicket(ticketType, paidPerson, persons);
+        Ticket t = tf.createTicket(ticketType, paidPerson.getId());
+        t.setIndebted(persons);
+
+        ²
         Database.getTicketDB().add(UUID.randomUUID(), t);
         return t;
     }

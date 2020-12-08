@@ -100,6 +100,7 @@ public class EqualSplitPanel extends JPanel implements ActionListener, ITicketPa
     public Ticket create(String ticketType, Person paidPerson, double price, Controller controller)
     {
         EqualTicketFactory etf = new EqualTicketFactory();
+        Ticket t1 = controller.createTicket(etf,"abc",paidPerson.getId());
         EqualSplitTicket t = (EqualSplitTicket) controller.createTicket(etf, ticketType, paidPerson);
         t.setPrice(price);
 

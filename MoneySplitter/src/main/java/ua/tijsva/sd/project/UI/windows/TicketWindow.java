@@ -24,7 +24,10 @@ public class TicketWindow extends JFrame implements ActionListener
     private EqualSplitPanel esp = new EqualSplitPanel();
     private UnequalSplitPanel usp = new UnequalSplitPanel();
     private JSpinner priceField;
-    private boolean esTicket;
+    private JTextField textField;
+    private JComboBox<Object> paidPersonComboBox;
+    private JButton confirmButton;
+    private boolean isEqualSplitTicket;
 
 
     public TicketWindow(Controller controller)
@@ -49,8 +52,8 @@ public class TicketWindow extends JFrame implements ActionListener
         JLabel label = new JLabel("Ticket name");
         addComponent(label,0,1,1,1,inset,false);
 
-        JTextField textfield = new JTextField(25);
-        addComponent(textfield,1,1,1,1,inset,true);
+        this.textField = new JTextField(25);
+        addComponent(this.textField,1,1,1,1,inset,true);
 
         label = new JLabel("Who paid? How much?");
         addComponent(label,2,1,1,1,inset,false);
@@ -58,9 +61,8 @@ public class TicketWindow extends JFrame implements ActionListener
 
         ArrayList<Object> personArrayList = new ArrayList<>();
         Database.getPersonDB().forEach(personArrayList::add);
-        JComboBox<Object> paidPersonComboBox = new JComboBox<Object>( personArrayList.toArray());
+        this.paidPersonComboBox = new JComboBox<Object>( personArrayList.toArray());
         JScrollPane personPane = new JScrollPane(paidPersonComboBox);
-        //addComponent(paidPersonComboBox,3,0,2,1,inset,true);
 
         SpinnerNumberModel model = new SpinnerNumberModel(50,0,Double.POSITIVE_INFINITY,1);
         this.priceField = new JSpinner(model);
@@ -87,9 +89,10 @@ public class TicketWindow extends JFrame implements ActionListener
         cancelButton.addActionListener(this);
         addComponent(cancelButton,8,0,1,1,inset,false);
 
-        JButton confirmButton = new JButton("Create Ticket");
+        confirmButton = new JButton("Create Ticket");
         confirmButton.addActionListener(this);
         addComponent(confirmButton,8,2,1,1,inset,false);
+        confirmButton.setEnabled(false);
 
 
     }
@@ -115,18 +118,22 @@ public class TicketWindow extends JFrame implements ActionListener
         switch(e.getActionCommand())
         {
             case "Equal Split Ticket":
+                this.confirmButton.setEnabled(true);
+
                 this.remove(usp);
                 addComponent(esp, 7, 0, 3, 1, new Insets(10, 0, 10, 10), false);
                 priceField.setVisible(true);
-                esTicket = true;
+                isEqualSplitTicket = true;
                 break;
 
             case "Unequal Split Ticket":
+                this.confirmButton.setVisible(true);
+
                 this.remove(esp);
                 addComponent(usp, 7, 0, 3, 1, new Insets(10, 10, 10, 10), false);
                 priceField.setVisible(false);
                 priceField.setValue(0);
-                esTicket = false;
+                isEqualSplitTicket = false;
                 break;
 
             case "Cancel":
@@ -134,11 +141,18 @@ public class TicketWindow extends JFrame implements ActionListener
                 this.dispose();
 
             case "Create Ticket":
-                if(esTicket)
+                if(isEqualSplitTicket)
                 {
-                    //controller.createTicket()
+                    esp.create(this.textField.getText(), (Person) this.paidPersonComboBox.getSelectedItem(), (Double) this.priceField.getValue(),this.controller);
+                    this.setVisible(false);
+                    this.dispose();
                 }
-
+                else if(!isEqualSplitTicket)
+                {
+                    usp.create(this.textField.getText(), (Person) this.paidPersonComboBox.getSelectedItem(), 0.0, this.controller);
+                    this.setVisible(false);
+                    this.dispose();
+                }
 
             default:
                 System.out.println(e.getActionCommand());

@@ -1,11 +1,10 @@
 package ua.tijsva.sd.project;
 
 import ua.tijsva.sd.project.UI.UIFrame;
+import ua.tijsva.sd.project.controller.Controller;
 import ua.tijsva.sd.project.database.Database;
 import ua.tijsva.sd.project.person.Person;
-import ua.tijsva.sd.project.ticket.EqualTicketFactory;
-import ua.tijsva.sd.project.ticket.TicketFactory;
-import ua.tijsva.sd.project.ticket.UnequalTicketFactory;
+import ua.tijsva.sd.project.ticket.*;
 
 import java.util.UUID;
 
@@ -23,6 +22,8 @@ public class Main
         Person p2 = new Person("B");
         Database.getPersonDB().add(p1.getId(),p1);
         Database.getPersonDB().add(p2.getId(),p2);
+        Controller controller = new Controller();
+        EqualSplitTicket t1 = (EqualSplitTicket) controller.createTicket(new EqualTicketFactory(),"azerty",p1);
     }
 
     void run()

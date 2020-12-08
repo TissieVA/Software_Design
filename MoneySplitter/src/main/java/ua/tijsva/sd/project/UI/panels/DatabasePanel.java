@@ -1,12 +1,15 @@
 package ua.tijsva.sd.project.UI.panels;
 
+import ua.tijsva.sd.project.UI.windows.TicketWindow;
 import ua.tijsva.sd.project.controller.Controller;
 import ua.tijsva.sd.project.ticket.Ticket;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class DatabasePanel extends JPanel
+public class DatabasePanel extends JPanel implements ActionListener
 {
 
     private JButton addTicketButton;
@@ -20,7 +23,6 @@ public class DatabasePanel extends JPanel
     {
         this.setLayout(new GridBagLayout());
         GridBagConstraints c = new GridBagConstraints();
-        //c.fill = GridBagConstraints.HORIZONTAL;
 
         JLabel label = new JLabel("Tickets");
         listModel = new DefaultListModel<>();
@@ -37,6 +39,7 @@ public class DatabasePanel extends JPanel
         c.gridx = 0;
         c.gridy = 2;
         this.add(addTicketButton,c);
+        this.addTicketButton.addActionListener(this);
 
         this.removeTicketButton = new JButton("Remove Ticket");
         c.gridx=1;
@@ -44,9 +47,12 @@ public class DatabasePanel extends JPanel
         this.add(removeTicketButton,c);
     }
 
-    public void addTicketButtonListener()
+    @Override
+    public void actionPerformed(ActionEvent e)
     {
-
+        if(e.getActionCommand().equals("Add Ticket"))
+        {
+            TicketWindow tw = new TicketWindow(controller);
+        }
     }
-
 }

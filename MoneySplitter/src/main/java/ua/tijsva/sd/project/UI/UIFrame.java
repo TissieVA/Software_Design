@@ -19,16 +19,12 @@ public class UIFrame extends JFrame implements Observer
 
     public UIFrame()
     {
-        //Create and set up the window.
         super("MoneySplitter");
         this.setSize(500,300);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        //Set up the content pane.
         initialise();
 
-        //Display the window.
-        //frame.pack();
         this.setVisible(true);
     }
 
@@ -51,7 +47,6 @@ public class UIFrame extends JFrame implements Observer
         c.gridy = 2;
 
         this.add(new DatabasePanel(controller));
-        TicketWindow tw = new TicketWindow(controller);
     }
 
 
