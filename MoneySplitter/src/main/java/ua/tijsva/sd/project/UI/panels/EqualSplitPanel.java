@@ -10,6 +10,12 @@ import java.util.ArrayList;
 
 public class EqualSplitPanel extends JPanel implements ActionListener
 {
+    private ArrayList<Object> personArrayList = new ArrayList<>();
+    private ArrayList<JComboBox<Object>> comboBoxArray = new ArrayList<>();
+    private int i=0;
+    private int row=0;
+    JButton addPersonButton = new JButton("+");
+
     public EqualSplitPanel()
     {
         this.setLayout(new GridBagLayout());
@@ -18,13 +24,10 @@ public class EqualSplitPanel extends JPanel implements ActionListener
         JLabel label = new JLabel("Add persons to ticket");
         addComponent(label,0,0,1,1,inset,false);
 
-        ArrayList<Object> personArrayList = new ArrayList<>();
-        Database.getPersonDB().forEach(personArrayList::add);
-        JComboBox<Object> personComboBox = new JComboBox<Object>( personArrayList.toArray());
-        addComponent(personComboBox,1,0,1,1, inset, true);
 
-        JButton addPersonButton = new JButton("+");
-        addComponent(addPersonButton,2,0,1,1,inset,false);
+        Database.getPersonDB().forEach(personArrayList::add);
+        extraPersonLine();
+
         addPersonButton.addActionListener(this);
 
     }
@@ -44,16 +47,29 @@ public class EqualSplitPanel extends JPanel implements ActionListener
         this.add(component, c);
     }
 
-    //TODO: make a method that creates an extra line for people to add to a ticket
 
     public void extraPersonLine()
     {
-        //TODO: create list of comboboxes
+        comboBoxArray.add(new JComboBox<Object>( personArrayList.toArray()));
+        addComponent(comboBoxArray.get(i),row=row+1,0,1,1, new Insets(10,10,10,10),false);
+        i++;
+        this.remove(addPersonButton);
+        addComponent(addPersonButton,row=row+1,0,1,1, new Insets(10,10,10,10),false);
     }
+
+
     @Override
     public void actionPerformed(ActionEvent e)
     {
         System.out.println(e.getActionCommand());
+        if(e.getActionCommand().equals("+"))
+            extraPersonLine();
 
+        SwingUtilities.updateComponentTreeUI(this);
+    }
+
+    public ArrayList<JComboBox<Object>> getComboBoxArray()
+    {
+        return comboBoxArray;
     }
 }

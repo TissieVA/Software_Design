@@ -9,6 +9,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.WindowEvent;
 import java.util.ArrayList;
 
 public class TicketWindow extends JFrame implements ActionListener
@@ -35,7 +36,7 @@ public class TicketWindow extends JFrame implements ActionListener
     {
         this.setComponentOrientation(ComponentOrientation.LEFT_TO_RIGHT);
         this.setLayout(new GridBagLayout());
-        this.setSize(700,500);
+        this.setSize(700,700);
         Insets inset = new Insets(10,10,10,10);
 
         JLabel label = new JLabel("Ticket name");
@@ -69,8 +70,12 @@ public class TicketWindow extends JFrame implements ActionListener
         unEqualTicketButton.addActionListener(this);
 
 
+        JButton cancelButton = new JButton("Cancel");
+        cancelButton.addActionListener(this);
+        addComponent(cancelButton,8,0,1,1,inset,false);
+
         JButton confirmButton = new JButton("Create Ticket");
-        confirmButton.addActionListener(listener -> System.out.println(paidPersonComboBox.getSelectedItem()));
+        confirmButton.addActionListener(this);
         addComponent(confirmButton,8,4,1,1,inset,false);
 
 
@@ -95,11 +100,14 @@ public class TicketWindow extends JFrame implements ActionListener
     public void actionPerformed(ActionEvent e)
     {
         //TODO: add Unequal split panel, remove it at if statemant and add it at else if statement
-        String radioButtonString = e.getActionCommand();
-        if(radioButtonString.equals("Equal Split Ticket"))
+        if(e.getActionCommand().equals("Equal Split Ticket"))
             addComponent(esp,7,0,5,1,new Insets(10,10,10,10),false);
-        else if(radioButtonString.equals("Unequal Split Ticket"))
+        else if(e.getActionCommand().equals("Unequal Split Ticket"))
             this.remove(esp);
+        else if(e.getActionCommand().equals("Cancel"))
+            this.dispatchEvent(new WindowEvent(this,WindowEvent.WINDOW_CLOSING));
+        else
+            System.out.println(e.getActionCommand());
         SwingUtilities.updateComponentTreeUI(this);
 
     }
