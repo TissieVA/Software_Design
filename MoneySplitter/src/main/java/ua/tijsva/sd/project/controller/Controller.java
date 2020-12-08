@@ -1,5 +1,6 @@
 package ua.tijsva.sd.project.controller;
 
+import ua.tijsva.sd.project.database.Database;
 import ua.tijsva.sd.project.person.Person;
 import ua.tijsva.sd.project.ticket.Ticket;
 import ua.tijsva.sd.project.ticket.TicketFactory;
@@ -9,24 +10,32 @@ import java.util.UUID;
 
 public class Controller
 {
-    public Ticket CreateTicket(TicketFactory tf, String ticketType, UUID paidPerson, double price)
+    public Ticket CreateTicket(TicketFactory tf, String ticketType, UUID paidPerson)
     {
-        return tf.createTicket( ticketType, paidPerson, price);
+        Ticket t = tf.createTicket(ticketType, paidPerson);
+        Database.getTicketDB().add(UUID.randomUUID(),t);
+        return t;
     }
 
-    public Ticket createTicket(TicketFactory tf, String ticketType, UUID paidPerson, double price, ArrayList<UUID> persons)
+    public Ticket createTicket(TicketFactory tf, String ticketType, UUID paidPerson, ArrayList<UUID> persons)
     {
-        return tf.createTicket(ticketType,paidPerson,price,persons);
+        Ticket t = tf.createTicket(ticketType, paidPerson, persons);
+        Database.getTicketDB().add(UUID.randomUUID(),t);
+        return t;
     }
 
-    public Ticket createTicket(TicketFactory tf, String ticketType, Person paidPerson, double price)
+    public Ticket createTicket(TicketFactory tf, String ticketType, Person paidPerson)
     {
-        return tf.createTicket(ticketType, paidPerson.getId(), price);
+        Ticket t = tf.createTicket(ticketType, paidPerson);
+        Database.getTicketDB().add(UUID.randomUUID(), t);
+        return t;
     }
 
-    public Ticket createTicket(TicketFactory tf, String ticketType, Person paidPerson, double price, ArrayList<UUID> persons)
+    public Ticket createTicket(TicketFactory tf, String ticketType, Person paidPerson, ArrayList<UUID> persons)
     {
-        return tf.createTicket(ticketType, paidPerson, price, persons);
+        Ticket t = tf.createTicket(ticketType, paidPerson, persons);
+        Database.getTicketDB().add(UUID.randomUUID(), t);
+        return t;
     }
 
 

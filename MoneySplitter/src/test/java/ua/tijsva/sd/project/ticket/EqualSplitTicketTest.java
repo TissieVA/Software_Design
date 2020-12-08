@@ -28,7 +28,7 @@ public class EqualSplitTicketTest {
         this.persons = new ArrayList<>(Arrays.asList(pa));
 
         TicketFactory tf = new EqualTicketFactory();
-        this.t1 =(EqualSplitTicket) tf.createTicket("Restaurant",p1.getId(),200.0);
+        this.t1 =(EqualSplitTicket) tf.createTicket("Restaurant",p1.getId());
         this.t1.setIndebted(this.persons);
     }
 
@@ -58,6 +58,7 @@ public class EqualSplitTicketTest {
     @Test
     public void addIndebted()
     {
+        this.t1.setPrice(200.0);
         Person p4 = new Person("D");
         this.persons.add(p4);
         Assert.assertEquals(true,this.t1.addIndebted(this.persons.get(3)));

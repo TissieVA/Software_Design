@@ -1,8 +1,10 @@
 package ua.tijsva.sd.project.UI.panels;
 
+import ua.tijsva.sd.project.controller.Controller;
 import ua.tijsva.sd.project.database.Database;
 import ua.tijsva.sd.project.UI.panels.ITicketPanel;
 import ua.tijsva.sd.project.person.Person;
+import ua.tijsva.sd.project.ticket.EqualSplitTicket;
 import ua.tijsva.sd.project.ticket.EqualTicketFactory;
 import ua.tijsva.sd.project.ticket.Ticket;
 
@@ -95,10 +97,12 @@ public class EqualSplitPanel extends JPanel implements ActionListener, ITicketPa
     }
 
     @Override
-    public Ticket create(String ticketType, Person paidPerson, double price)
+    public Ticket create(String ticketType, Person paidPerson, double price, Controller controller)
     {
-        EqualTicketFactory etp = new EqualTicketFactory();
-        Ticket t = etp.createTicket(ticketType, paidPerson, price);
+        EqualTicketFactory etf = new EqualTicketFactory();
+        EqualSplitTicket t = (EqualSplitTicket) controller.createTicket(etf, ticketType, paidPerson);
+        t.setPrice(price);
+
         for (int j = 0; j < i; j++)
         {
             t.addIndebted((Person) comboBoxArray.get(j).getSelectedItem());

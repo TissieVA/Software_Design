@@ -2,9 +2,11 @@ package ua.tijsva.sd.project.UI.panels;
 
 import javafx.scene.control.ComboBox;
 import jdk.internal.org.objectweb.asm.tree.TryCatchBlockNode;
+import ua.tijsva.sd.project.controller.Controller;
 import ua.tijsva.sd.project.database.Database;
 import ua.tijsva.sd.project.person.Person;
 import ua.tijsva.sd.project.ticket.Ticket;
+import ua.tijsva.sd.project.ticket.UnequalSplitTicket;
 import ua.tijsva.sd.project.ticket.UnequalTicketFactory;
 
 import javax.swing.*;
@@ -62,7 +64,6 @@ public class UnequalSplitPanel extends JPanel implements ActionListener, ITicket
         JComboBox<Object> comboBox = new JComboBox<Object>( personArrayList.toArray());
         comboBoxArray.add(comboBox);
         JScrollPane personPane = new JScrollPane(comboBox);
-        System.out.println(personPane.getViewport().getComponent(0));
 
         SpinnerNumberModel model = new SpinnerNumberModel(50,0,Double.POSITIVE_INFINITY,1);
         JSpinner priceField = new JSpinner(model);
@@ -102,7 +103,6 @@ public class UnequalSplitPanel extends JPanel implements ActionListener, ITicket
     @Override
     public void actionPerformed(ActionEvent e)
     {
-        System.out.println(e.getActionCommand());
         if(e.getActionCommand().equals("+"))
             extraPersonLine();
         else if(e.getActionCommand().equals("-"))
@@ -113,11 +113,10 @@ public class UnequalSplitPanel extends JPanel implements ActionListener, ITicket
     }
 
     @Override
-    public Ticket create(String ticketType, Person paidPerson, double price)
+    public Ticket create(String ticketType, Person paidPerson, double Price, Controller controller)
     {
-        /*UnequalTicketFactory utf = new UnequalTicketFactory();
-        Ticket t = utf.createTicket()
-        t.a
+        UnequalTicketFactory utf = new UnequalTicketFactory();
+        UnequalSplitTicket t = (UnequalSplitTicket) controller.createTicket(utf, ticketType, paidPerson);
 
         for (int j = 0; j < i; j++)
         {
@@ -125,9 +124,10 @@ public class UnequalSplitPanel extends JPanel implements ActionListener, ITicket
             JSpinner spinner = (JSpinner) (this.spinnersArray.get(j));
             Double price = (Double) (spinner.getValue());
 
-            //t.addIndebted((Person) this.comboBoxArray.get(j).getSelectedItem(),price);
+            t.addIndebted((Person) this.comboBoxArray.get(j).getSelectedItem(),price);
+
         }
-        return t;*/
-        return null;
+        return t;
     }
+
 }

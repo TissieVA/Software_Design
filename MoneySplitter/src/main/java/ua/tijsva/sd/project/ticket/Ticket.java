@@ -16,10 +16,9 @@ public abstract class Ticket
     protected double price=0;
     protected HashMap<UUID, Double> indebted;
 
-    public Ticket(String ticketType, UUID paidPerson, double price) {
+    public Ticket(String ticketType, UUID paidPerson) {
         this.ticketType = ticketType;
         this.paidPerson = paidPerson;
-        this.price = price;
         this.id = UUID.randomUUID();
         this.indebted = new HashMap<>();
     }

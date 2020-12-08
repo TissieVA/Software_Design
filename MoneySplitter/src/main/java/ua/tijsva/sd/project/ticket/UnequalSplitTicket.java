@@ -9,8 +9,8 @@ import java.util.UUID;
 
 public class UnequalSplitTicket extends Ticket
 {
-    public UnequalSplitTicket(String ticketType, UUID paidPerson, double price) {
-        super(ticketType, paidPerson, price);
+    public UnequalSplitTicket(String ticketType, UUID paidPerson) {
+        super(ticketType, paidPerson);
     }
 
     public void calculatePrice()

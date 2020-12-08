@@ -36,7 +36,7 @@ public class UnequalSplitTicketTest {
         }
 
         TicketFactory tf = new UnequalTicketFactory();
-        this.t1 =(UnequalSplitTicket) tf.createTicket("Restaurant",p1.getId(),200.0);
+        this.t1 =(UnequalSplitTicket) tf.createTicket("Restaurant",p1.getId());
         this.t1.setIndebted(this.persons);
 
     }
