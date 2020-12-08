@@ -18,11 +18,12 @@ import java.util.ArrayList;
 
 public class TicketWindow extends JFrame implements ActionListener
 {
-    protected JTextField textfield;
+
     private Controller controller;
     private GridBagConstraints c = new GridBagConstraints();
     private EqualSplitPanel esp = new EqualSplitPanel();
     private UnequalSplitPanel usp = new UnequalSplitPanel();
+    private JSpinner priceField;
     private boolean esTicket;
 
 
@@ -62,7 +63,7 @@ public class TicketWindow extends JFrame implements ActionListener
         //addComponent(paidPersonComboBox,3,0,2,1,inset,true);
 
         SpinnerNumberModel model = new SpinnerNumberModel(50,0,Double.POSITIVE_INFINITY,1);
-        JSpinner priceField = new JSpinner(model);
+        this.priceField = new JSpinner(model);
         JScrollPane pricePane = new JScrollPane(priceField);
 
         JSplitPane splitPane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT,personPane,pricePane);
@@ -111,18 +112,20 @@ public class TicketWindow extends JFrame implements ActionListener
     @Override
     public void actionPerformed(ActionEvent e)
     {
-        //TODO: add Unequal split panel, remove it at if statemant and add it at else if statement
         switch(e.getActionCommand())
         {
             case "Equal Split Ticket":
                 this.remove(usp);
                 addComponent(esp, 7, 0, 3, 1, new Insets(10, 0, 10, 10), false);
+                priceField.setVisible(true);
                 esTicket = true;
                 break;
 
             case "Unequal Split Ticket":
                 this.remove(esp);
                 addComponent(usp, 7, 0, 3, 1, new Insets(10, 10, 10, 10), false);
+                priceField.setVisible(false);
+                priceField.setValue(0);
                 esTicket = false;
                 break;
 

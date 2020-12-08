@@ -1,6 +1,10 @@
 package ua.tijsva.sd.project.UI.panels;
 
 import ua.tijsva.sd.project.database.Database;
+import ua.tijsva.sd.project.UI.panels.ITicketPanel;
+import ua.tijsva.sd.project.person.Person;
+import ua.tijsva.sd.project.ticket.EqualTicketFactory;
+import ua.tijsva.sd.project.ticket.Ticket;
 
 import javax.swing.*;
 import java.awt.*;
@@ -8,7 +12,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
-public class EqualSplitPanel extends JPanel implements ActionListener
+public class EqualSplitPanel extends JPanel implements ActionListener, ITicketPanel
 {
     private ArrayList<Object> personArrayList = new ArrayList<>();
     private ArrayList<JComboBox<Object>> comboBoxArray = new ArrayList<>();
@@ -90,8 +94,15 @@ public class EqualSplitPanel extends JPanel implements ActionListener
         SwingUtilities.updateComponentTreeUI(this);
     }
 
-    public ArrayList<JComboBox<Object>> getComboBoxArray()
+    @Override
+    public Ticket create(String ticketType, Person paidPerson, double price)
     {
-        return comboBoxArray;
+        EqualTicketFactory etp = new EqualTicketFactory();
+        Ticket t = etp.createTicket(ticketType, paidPerson, price);
+        for (int j = 0; j < i; j++)
+        {
+            t.addIndebted((Person) comboBoxArray.get(j).getSelectedItem());
+        }
+        return t;
     }
 }
