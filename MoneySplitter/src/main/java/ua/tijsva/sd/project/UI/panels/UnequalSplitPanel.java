@@ -8,16 +8,16 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
-public class EqualSplitPanel extends JPanel implements ActionListener
+public class UnequalSplitPanel extends JPanel implements ActionListener
 {
     private ArrayList<Object> personArrayList = new ArrayList<>();
-    private ArrayList<JComboBox<Object>> comboBoxArray = new ArrayList<>();
+    private ArrayList<JSplitPane> splitPanesArray = new ArrayList<>();
     private int i=0;
     private int row=0;
     JButton addPersonButton = new JButton("+");
     JButton removePersonButton = new JButton("-");
 
-    public EqualSplitPanel()
+    public UnequalSplitPanel()
     {
         this.setLayout(new GridBagLayout());
         Insets inset = new Insets(10,10,10,10);
@@ -52,9 +52,19 @@ public class EqualSplitPanel extends JPanel implements ActionListener
 
     public void extraPersonLine()
     {
-        comboBoxArray.add(new JComboBox<Object>( personArrayList.toArray()));
-        addComponent(comboBoxArray.get(i),row=row+1,0,1,1, new Insets(10,10,10,10),false);
+
+        JScrollPane personPane = new JScrollPane(new JComboBox<Object>( personArrayList.toArray()));
+
+        SpinnerNumberModel model = new SpinnerNumberModel(50,0,Double.POSITIVE_INFINITY,1);
+        JSpinner priceField = new JSpinner(model);
+        JScrollPane pricePane = new JScrollPane(priceField);
+
+        JSplitPane splitPane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, personPane, priceField);
+        splitPane.setResizeWeight(0.3);
+        splitPanesArray.add(splitPane);
         i++;
+        addComponent(splitPane,row=row+1,0,3,1,new Insets(10,10,10,10),true);
+
         this.remove(addPersonButton);
         this.remove(removePersonButton);
         addComponent(addPersonButton,row=row+1,0,1,1, new Insets(10,10,10,10),false);
@@ -65,8 +75,8 @@ public class EqualSplitPanel extends JPanel implements ActionListener
     {
         if(i>1) {
             i--;
-            this.remove(comboBoxArray.get(i));
-            comboBoxArray.remove(i);
+            this.remove(splitPanesArray.get(i));
+            splitPanesArray.remove(i);
 
             row--;
             this.remove(addPersonButton);
@@ -90,8 +100,4 @@ public class EqualSplitPanel extends JPanel implements ActionListener
         SwingUtilities.updateComponentTreeUI(this);
     }
 
-    public ArrayList<JComboBox<Object>> getComboBoxArray()
-    {
-        return comboBoxArray;
-    }
 }
