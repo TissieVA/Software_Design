@@ -9,8 +9,10 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
+import java.util.Observable;
+import java.util.Observer;
 
-public class PersonDBPanel extends JPanel implements ActionListener
+public class PersonDBPanel extends JPanel implements ActionListener, Observer
 {
     private ArrayList<Person> personArrayList = new ArrayList<>();
     private DefaultListModel<Person> listModel = new DefaultListModel<>();
@@ -68,6 +70,12 @@ public class PersonDBPanel extends JPanel implements ActionListener
                 if(list.getSelectedValue() != null)
                 Database.getPersonDB().remove(list.getSelectedValue().getId());
         }
+        refresh();
+    }
+
+    @Override
+    public void update(Observable o, Object arg)
+    {
         refresh();
     }
 }

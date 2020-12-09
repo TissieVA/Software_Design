@@ -9,8 +9,10 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
+import java.util.Observable;
+import java.util.Observer;
 
-public class TicketDBPanel extends JPanel implements ActionListener
+public class TicketDBPanel extends JPanel implements ActionListener, Observer
 {
     private ArrayList<Ticket> ticketArrayList = new ArrayList<>();
     private DefaultListModel<Ticket> listModel = new DefaultListModel<>();
@@ -67,6 +69,12 @@ public class TicketDBPanel extends JPanel implements ActionListener
             case "-":
                 Database.getPersonDB().remove(list.getSelectedValue().getId());
         }
+        refresh();
+    }
+
+    @Override
+    public void update(Observable o, Object arg)
+    {
         refresh();
     }
 }

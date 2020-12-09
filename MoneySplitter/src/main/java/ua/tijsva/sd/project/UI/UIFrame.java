@@ -30,21 +30,12 @@ public class UIFrame extends JFrame implements Observer
 
     private void initialise()
     {
-        this.setComponentOrientation(ComponentOrientation.LEFT_TO_RIGHT);
         this.setLayout(new GridBagLayout());
-        JButton calculateButton;
-
         GridBagConstraints c = new GridBagConstraints();
-        c.fill = GridBagConstraints.HORIZONTAL;
+        c.gridx=0;
+        c.gridy=0;
 
-        calculateButton = new JButton("CALCULATE");
-        c.anchor = GridBagConstraints.PAGE_END;
-        c.gridx = 2;
-        c.gridy = 3;
-        this.add(calculateButton,c);
 
-        c.gridx = 1;
-        c.gridy = 2;
 
         this.add(new DatabasePanel(controller));
     }
