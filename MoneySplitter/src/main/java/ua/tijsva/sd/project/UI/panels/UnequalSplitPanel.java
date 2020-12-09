@@ -17,7 +17,8 @@ import java.util.ArrayList;
 
 public class UnequalSplitPanel extends JPanel implements ActionListener, ITicketPanel
 {
-    private ArrayList<Object> personArrayList = new ArrayList<>();
+    private ArrayList<Person> personArrayList = new ArrayList<>();
+    private ArrayList<Person> remainingPersons = new ArrayList<>();
     private ArrayList<JSplitPane> splitPanesArray = new ArrayList<>();
     private ArrayList<JComboBox<Object>> comboBoxArray = new ArrayList<>();
     private ArrayList<JSpinner> spinnersArray = new ArrayList<>();
@@ -61,31 +62,55 @@ public class UnequalSplitPanel extends JPanel implements ActionListener, ITicket
 
     public void extraPersonLine()
     {
-        JComboBox<Object> comboBox = new JComboBox<Object>( personArrayList.toArray());
-        comboBoxArray.add(comboBox);
-        JScrollPane personPane = new JScrollPane(comboBox);
+        personArrayList.clear();
+        Database.getPersonDB().forEach(personArrayList::add);
 
-        SpinnerNumberModel model = new SpinnerNumberModel(50,0,Double.POSITIVE_INFINITY,1);
-        JSpinner priceField = new JSpinner(model);
-        spinnersArray.add(priceField);
-        JScrollPane pricePane = new JScrollPane(priceField);
+        if (comboBoxArray.size() < personArrayList.size()) {
 
-        JSplitPane splitPane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, personPane, priceField);
-        splitPane.setResizeWeight(0.3);
-        splitPanesArray.add(splitPane);
-        i++;
-        addComponent(splitPane,row=row+1,0,3,1,new Insets(10,10,10,10),true);
+            if (comboBoxArray.size() > 0) {
+                comboBoxArray.get(i - 1).setEnabled(false);
+            }
 
-        this.remove(addPersonButton);
-        this.remove(removePersonButton);
-        addComponent(addPersonButton,row=row+1,0,1,1, new Insets(10,10,10,10),false);
-        addComponent(removePersonButton,row,1,1,1,new Insets(10,10,10,10),false);
+            remainingPersonsUpdate();
+            JComboBox<Object> comboBox = new JComboBox<Object>(remainingPersons.toArray());
+            comboBoxArray.add(comboBox);
+            comboBox.addActionListener(this);
+            JScrollPane personPane = new JScrollPane(comboBox);
+
+            SpinnerNumberModel model = new SpinnerNumberModel(50, 0, Double.POSITIVE_INFINITY, 1);
+            JSpinner priceField = new JSpinner(model);
+            spinnersArray.add(priceField);
+            JScrollPane pricePane = new JScrollPane(priceField);
+
+            JSplitPane splitPane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, personPane, priceField);
+            splitPane.setResizeWeight(0.3);
+            splitPanesArray.add(splitPane);
+            i++;
+            addComponent(splitPane, row = row + 1, 0, 3, 1, new Insets(10, 10, 10, 10), true);
+
+            this.remove(addPersonButton);
+            this.remove(removePersonButton);
+            addComponent(addPersonButton, row = row + 1, 0, 1, 1, new Insets(10, 10, 10, 10), false);
+            addComponent(removePersonButton, row, 1, 1, 1, new Insets(10, 10, 10, 10), false);
+        }
     }
 
-    public void lessPersonLine()
+    private void remainingPersonsUpdate()
+    {
+        remainingPersons.clear();
+        Database.getPersonDB().forEach(remainingPersons::add);
+        for (JComboBox<Object> cb : comboBoxArray)
+        {
+            remainingPersons.remove(cb.getSelectedItem());
+        }
+    }
+
+    private void lessPersonLine()
     {
         if(i>1) {
+
             i--;
+            this.comboBoxArray.get(i-1).setEnabled(true);
             this.comboBoxArray.remove(i);
             this.spinnersArray.remove(i);
             this.remove(splitPanesArray.get(i));
@@ -107,7 +132,6 @@ public class UnequalSplitPanel extends JPanel implements ActionListener, ITicket
             extraPersonLine();
         else if(e.getActionCommand().equals("-"))
             lessPersonLine();
-
 
         SwingUtilities.updateComponentTreeUI(this);
     }

@@ -1,5 +1,6 @@
 package ua.tijsva.sd.project.ticket;
 
+import ua.tijsva.sd.project.database.Database;
 import ua.tijsva.sd.project.person.Person;
 
 import java.util.ArrayList;
@@ -12,6 +13,7 @@ public class EqualSplitTicket extends Ticket
     public EqualSplitTicket(String ticketType, UUID paidPerson)
     {
         super(ticketType, paidPerson);
+        addIndebted(Database.getPersonDB().get(paidPerson));
     }
 
     public void setPrice(double price)

@@ -21,20 +21,19 @@ public class DatabasePanel extends JPanel implements ActionListener
 
     public DatabasePanel(Controller controller)
     {
+        this.controller = controller;
         this.setLayout(new GridBagLayout());
         GridBagConstraints c = new GridBagConstraints();
 
         JLabel label = new JLabel("Tickets");
-        listModel = new DefaultListModel<>();
-        jList = new JList<>(listModel);
+
         c.gridx = 0;
         c.gridy=0;
         this.add(label,c);
-        c.gridy=1;
-        this.add(jList,c);
+        c.gridx = 1;
+        this.add(new PersonDBPanel(),c);
 
         this.addTicketButton = new JButton("Add Ticket");
-        c.weightx=0.5;
         c.fill=GridBagConstraints.HORIZONTAL;
         c.gridx = 0;
         c.gridy = 2;

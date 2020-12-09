@@ -10,7 +10,7 @@ import java.util.UUID;
 
 public class Controller
 {
-    public Ticket CreateTicket(TicketFactory tf, String ticketType, UUID paidPerson)
+    public Ticket createTicket(TicketFactory tf, String ticketType, UUID paidPerson)
     {
         Ticket t = tf.createTicket(ticketType, paidPerson);
         Database.getTicketDB().add(UUID.randomUUID(),t);
@@ -37,10 +37,7 @@ public class Controller
         Ticket t = tf.createTicket(ticketType, paidPerson.getId());
         t.setIndebted(persons);
 
-        ²
         Database.getTicketDB().add(UUID.randomUUID(), t);
         return t;
     }
-
-
 }

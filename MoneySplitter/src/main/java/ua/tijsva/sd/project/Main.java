@@ -20,10 +20,13 @@ public class Main
     {
         Person p1 = new Person("Alberto Vermicelli");
         Person p2 = new Person("B");
+        Person p3 = new Person("C");
         Database.getPersonDB().add(p1.getId(),p1);
         Database.getPersonDB().add(p2.getId(),p2);
+        Database.getPersonDB().add(p3.getId(),p3);
         Controller controller = new Controller();
         EqualSplitTicket t1 = (EqualSplitTicket) controller.createTicket(new EqualTicketFactory(),"azerty",p1);
+        Database.getTicketDB().add(t1.getId(),t1);
     }
 
     void run()

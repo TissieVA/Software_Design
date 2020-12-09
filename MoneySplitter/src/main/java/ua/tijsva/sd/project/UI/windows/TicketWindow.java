@@ -127,7 +127,7 @@ public class TicketWindow extends JFrame implements ActionListener
                 break;
 
             case "Unequal Split Ticket":
-                this.confirmButton.setVisible(true);
+                this.confirmButton.setEnabled(true);
 
                 this.remove(esp);
                 addComponent(usp, 7, 0, 3, 1, new Insets(10, 10, 10, 10), false);
@@ -147,8 +147,7 @@ public class TicketWindow extends JFrame implements ActionListener
                     this.setVisible(false);
                     this.dispose();
                 }
-                else if(!isEqualSplitTicket)
-                {
+                else {
                     usp.create(this.textField.getText(), (Person) this.paidPersonComboBox.getSelectedItem(), 0.0, this.controller);
                     this.setVisible(false);
                     this.dispose();

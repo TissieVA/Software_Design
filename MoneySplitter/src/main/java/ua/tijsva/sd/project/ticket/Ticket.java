@@ -74,4 +74,14 @@ public abstract class Ticket
         ArrayList<UUID> UUIDlist = (ArrayList<UUID>) persons.stream().map(Person::getId).collect(Collectors.toList());
         this.setIndebted(UUIDlist);
     }
+
+    @Override
+    public String toString()
+    {
+        return "Ticket{" +
+                "ticketType='" + ticketType + '\'' +
+                ", paidPerson=" + paidPerson +
+                ", price=" + price +
+                '}';
+    }
 }

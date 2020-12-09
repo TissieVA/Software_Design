@@ -24,6 +24,13 @@ public class Database<T> extends Observable implements Iterable<T>
         this.notifyObservers();
     }
 
+    public void remove(UUID id)
+    {
+        this.dbMap.remove(id);
+        this.setChanged();
+        this.notifyObservers();
+    }
+
     public T get(UUID id)
     {
         return this.dbMap.get(id);
@@ -44,7 +51,6 @@ public class Database<T> extends Observable implements Iterable<T>
         {
             ticketDB = new Database<>();
         }
-
         return ticketDB;
     }
 
