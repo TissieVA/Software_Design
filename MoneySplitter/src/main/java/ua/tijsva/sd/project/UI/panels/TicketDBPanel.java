@@ -1,6 +1,9 @@
 package ua.tijsva.sd.project.UI.panels;
 
+import com.sun.javaws.jnl.RContentDesc;
 import ua.tijsva.sd.project.UI.windows.PersonWindow;
+import ua.tijsva.sd.project.UI.windows.TicketWindow;
+import ua.tijsva.sd.project.controller.Controller;
 import ua.tijsva.sd.project.database.Database;
 import ua.tijsva.sd.project.ticket.Ticket;
 
@@ -14,17 +17,19 @@ import java.util.Observer;
 
 public class TicketDBPanel extends JPanel implements ActionListener, Observer
 {
+    private Controller controller;
     private ArrayList<Ticket> ticketArrayList = new ArrayList<>();
     private DefaultListModel<Ticket> listModel = new DefaultListModel<>();
     private JList<Ticket> list;
 
-    public TicketDBPanel()
+    public TicketDBPanel(Controller controller)
     {
+        this.controller = controller;
         this.setLayout(new GridBagLayout());
         GridBagConstraints c = new GridBagConstraints();
-        c.gridx = 0;
+        c.gridx = 1;
         c.gridy = 0;
-        JLabel label = new JLabel("Persons");
+        JLabel label = new JLabel("Tickets");
         this.add(label,c);
 
         Database.getTicketDB().forEach(ticketArrayList::add);
@@ -33,6 +38,7 @@ public class TicketDBPanel extends JPanel implements ActionListener, Observer
         list = new JList<>(listModel);
         list.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
         list.setLayoutOrientation(JList.VERTICAL);
+        c.gridx = 1;
         c.gridy = 1;
         this.add(list,c);
 
@@ -45,7 +51,7 @@ public class TicketDBPanel extends JPanel implements ActionListener, Observer
         JButton removePersonButton = new JButton("-");
         removePersonButton.addActionListener(this);
         c.gridy = 2;
-        c.gridx = 1;
+        c.gridx = 2;
         this.add(removePersonButton,c);
     }
 
@@ -64,10 +70,11 @@ public class TicketDBPanel extends JPanel implements ActionListener, Observer
         switch (e.getActionCommand())
         {
             case "+":
-                PersonWindow pw = new PersonWindow();
+                new TicketWindow(controller);
 
             case "-":
-                Database.getPersonDB().remove(list.getSelectedValue().getId());
+                if(list.getSelectedValue() != null)
+                    Database.getTicketDB().remove(list.getSelectedValue().getId());
         }
         refresh();
     }

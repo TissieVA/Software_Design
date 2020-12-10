@@ -22,6 +22,7 @@ public class Database<T> extends Observable implements Iterable<T>
         this.dbMap.put(id, t);
         this.setChanged();
         this.notifyObservers();
+        System.out.println(this.countObservers());
     }
 
     public void remove(UUID id)

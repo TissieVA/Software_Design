@@ -22,10 +22,11 @@ public class PersonDBPanel extends JPanel implements ActionListener, Observer
     {
         this.setLayout(new GridBagLayout());
         GridBagConstraints c = new GridBagConstraints();
-        c.gridx = 0;
+        c.gridx = 1;
         c.gridy = 0;
         JLabel label = new JLabel("Persons");
         this.add(label,c);
+
 
         Database.getPersonDB().forEach(personArrayList::add);
 
@@ -33,6 +34,7 @@ public class PersonDBPanel extends JPanel implements ActionListener, Observer
         list = new JList<>(listModel);
         list.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
         list.setLayoutOrientation(JList.VERTICAL);
+        c.gridx = 1;
         c.gridy = 1;
         this.add(list,c);
 
@@ -45,8 +47,10 @@ public class PersonDBPanel extends JPanel implements ActionListener, Observer
         JButton removePersonButton = new JButton("-");
         removePersonButton.addActionListener(this);
         c.gridy = 2;
-        c.gridx = 1;
+        c.gridx = 2;
         this.add(removePersonButton,c);
+
+
     }
 
     public void refresh()

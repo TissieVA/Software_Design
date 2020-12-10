@@ -36,8 +36,8 @@ public class Controller
     {
         Ticket t = tf.createTicket(ticketType, paidPerson.getId());
         t.setIndebted(persons);
-
         Database.getTicketDB().add(UUID.randomUUID(), t);
         return t;
     }
+
 }

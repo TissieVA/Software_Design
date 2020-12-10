@@ -1,5 +1,6 @@
 package ua.tijsva.sd.project.ticket;
 
+import ua.tijsva.sd.project.database.Database;
 import ua.tijsva.sd.project.person.Person;
 
 import java.util.ArrayList;
@@ -80,7 +81,7 @@ public abstract class Ticket
     {
         return "Ticket{" +
                 "ticketType='" + ticketType + '\'' +
-                ", paidPerson=" + paidPerson +
+                ", paidPerson=" + Database.getPersonDB().get(paidPerson).getName() +
                 ", price=" + price +
                 '}';
     }
