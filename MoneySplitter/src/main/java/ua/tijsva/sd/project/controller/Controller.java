@@ -13,7 +13,7 @@ public class Controller
     public Ticket createTicket(TicketFactory tf, String ticketType, UUID paidPerson)
     {
         Ticket t = tf.createTicket(ticketType, paidPerson);
-        Database.getTicketDB().add(UUID.randomUUID(),t);
+        Database.getTicketDB().add(t.getId(),t);
         return t;
     }
 
@@ -21,14 +21,14 @@ public class Controller
     {
         Ticket t = tf.createTicket(ticketType, paidPerson);
         t.setIndebted(persons);
-        Database.getTicketDB().add(UUID.randomUUID(),t);
+        Database.getTicketDB().add(t.getId(),t);
         return t;
     }
 
     public Ticket createTicket(TicketFactory tf, String ticketType, Person paidPerson)
     {
         Ticket t = tf.createTicket(ticketType, paidPerson.getId());
-        Database.getTicketDB().add(UUID.randomUUID(), t);
+        Database.getTicketDB().add(t.getId(), t);
         return t;
     }
 

@@ -3,6 +3,7 @@ package ua.tijsva.sd.project.UI;
 import ua.tijsva.sd.project.UI.panels.PersonDBPanel;
 import ua.tijsva.sd.project.UI.panels.TicketDBPanel;
 import ua.tijsva.sd.project.controller.Controller;
+import ua.tijsva.sd.project.database.Database;
 
 import javax.swing.*;
 import java.awt.*;
@@ -23,6 +24,9 @@ public class UIFrame extends JFrame implements Observer
         this.setSize(700,700);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
+        Database.getTicketDB().addObserver(this);
+        Database.getPersonDB().addObserver(this);
+
         initialise();
 
         this.setVisible(true);
@@ -41,9 +45,7 @@ public class UIFrame extends JFrame implements Observer
         this.add(new TicketDBPanel(controller),c);
 
     }
-
-
-
+    //TODO: Observers aren't recognised
 
     @Override
     public void update(Observable o, Object arg)

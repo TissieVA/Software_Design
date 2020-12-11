@@ -18,12 +18,13 @@ import java.util.Observer;
 public class TicketDBPanel extends JPanel implements ActionListener, Observer
 {
     private Controller controller;
-    private ArrayList<Ticket> ticketArrayList = new ArrayList<>();
     private DefaultListModel<Ticket> listModel = new DefaultListModel<>();
     private JList<Ticket> list;
 
     public TicketDBPanel(Controller controller)
     {
+        Database.getTicketDB().addObserver(this);
+
         this.controller = controller;
         this.setLayout(new GridBagLayout());
         GridBagConstraints c = new GridBagConstraints();
@@ -32,9 +33,8 @@ public class TicketDBPanel extends JPanel implements ActionListener, Observer
         JLabel label = new JLabel("Tickets");
         this.add(label,c);
 
-        Database.getTicketDB().forEach(ticketArrayList::add);
 
-        ticketArrayList.forEach(listModel::addElement);
+        Database.getTicketDB().forEach(listModel::addElement);
         list = new JList<>(listModel);
         list.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
         list.setLayoutOrientation(JList.VERTICAL);
@@ -57,10 +57,10 @@ public class TicketDBPanel extends JPanel implements ActionListener, Observer
 
     public void refresh()
     {
-        ticketArrayList.clear();
-        Database.getTicketDB().forEach(ticketArrayList::add);
+
         listModel.clear();
-        ticketArrayList.forEach(listModel::addElement);
+        Database.getTicketDB().forEach(listModel::addElement);
+
         SwingUtilities.updateComponentTreeUI(this);
     }
 
@@ -71,10 +71,12 @@ public class TicketDBPanel extends JPanel implements ActionListener, Observer
         {
             case "+":
                 new TicketWindow(controller);
+                break;
 
             case "-":
                 if(list.getSelectedValue() != null)
                     Database.getTicketDB().remove(list.getSelectedValue().getId());
+                break;
         }
         refresh();
     }

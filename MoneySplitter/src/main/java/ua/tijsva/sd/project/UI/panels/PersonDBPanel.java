@@ -20,6 +20,8 @@ public class PersonDBPanel extends JPanel implements ActionListener, Observer
 
     public PersonDBPanel()
     {
+        Database.getPersonDB().addObserver(this);
+
         this.setLayout(new GridBagLayout());
         GridBagConstraints c = new GridBagConstraints();
         c.gridx = 1;
@@ -69,10 +71,12 @@ public class PersonDBPanel extends JPanel implements ActionListener, Observer
         {
             case "+":
                 PersonWindow pw = new PersonWindow();
+                break;
 
             case "-":
                 if(list.getSelectedValue() != null)
-                Database.getPersonDB().remove(list.getSelectedValue().getId());
+                    Database.getPersonDB().remove(list.getSelectedValue().getId());
+                break;
         }
         refresh();
     }
