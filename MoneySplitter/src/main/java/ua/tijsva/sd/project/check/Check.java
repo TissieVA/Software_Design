@@ -5,6 +5,7 @@ import ua.tijsva.sd.project.person.Person;
 import ua.tijsva.sd.project.ticket.Ticket;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.UUID;
 
@@ -13,6 +14,7 @@ public class Check
     private Database<Ticket> ticketDb;
     private Database<Person> personDb;
     private HashMap<UUID, Double> totalCheck;
+    ArrayList<String> solution = new ArrayList<>();
 
     public Check(Database<Ticket> ticketDb, Database<Person> personDb)
     {
@@ -28,14 +30,14 @@ public class Check
         for(Ticket t : ticketDb)
         {
             if(totalCheck.containsKey(t.getPaidPerson()))
-                totalCheck.put(t.getPaidPerson(),totalCheck.get(t.getPaidPerson())-t.getPrice());
+                totalCheck.put(t.getPaidPerson(),totalCheck.get(t.getPaidPerson())+t.getPrice());
             else
                 System.out.format("Person %s, who paid ticket %s not found", t.getPaidPerson().toString(),t.getId().toString());
 
             for(UUID id: t.getIndebted().keySet())
             {
                 if (totalCheck.containsKey(id))
-                    totalCheck.put(id,totalCheck.get(id)+t.getIndebted().get(id));
+                    totalCheck.put(id,totalCheck.get(id)-t.getIndebted().get(id));
                 else
                     System.out.format("Person %s in ticked %s not found", id.toString(), t.getId().toString());
             }
@@ -43,22 +45,52 @@ public class Check
         return totalCheck;
     }
 
-    public void whoOwesWho()
+    public void whoOwesWho(HashMap<UUID, Double> listing)
     {
-        this.totalCheck = calculateCheck();
+
+        Double maxPrice = (Double) Collections.max(listing.values());
+        Double minPrice = (Double) Collections.min(listing.values());
+        if(!minPrice.equals(maxPrice))
+        {
+            UUID maxPricePerson = getKeyFromValue(listing, maxPrice);
+            UUID minPricePerson = getKeyFromValue(listing, minPrice);
+            Double result = maxPrice + minPrice;
+            result = Math.round(result* 100.0)/100.0;
+            if(result>=0.0)
+            {
+                solution.add(String.format("%s -> %s : %.2f%n",Database.getPersonDB().get(minPricePerson).getName(),Database.getPersonDB().get(maxPricePerson).getName(),Math.abs(minPrice)));
+
+                listing.put(maxPricePerson, result);
+                listing.put(minPricePerson, 0.0);
+            }
+            else
+            {
+                solution.add(String.format("%s -> %s : %.2f%n",Database.getPersonDB().get(minPricePerson).getName(),Database.getPersonDB().get(maxPricePerson).getName(),Math.abs(maxPrice)));
+                listing.put(minPricePerson, result);
+                listing.put(maxPricePerson, 0.0);
+            }
+            whoOwesWho(listing);
+        }
 
     }
-
     public String print()
     {
         this.totalCheck = calculateCheck();
-        StringBuilder string = new StringBuilder("Positive values are people who owe money to the people with negative value.%n");
+        solution.clear();
+        whoOwesWho(this.totalCheck);
+        StringBuilder string = new StringBuilder("");
 
-        for(UUID id: totalCheck.keySet())
-        {
-            string.append(String.format("%s : %.2f%n", Database.getPersonDB().get(id).getName(), totalCheck.get(id)));
-        }
-
+        solution.forEach(string::append);
         return string.toString();
+    }
+
+    private UUID getKeyFromValue(HashMap<UUID,Double> hm, Double value)
+    {
+        for (UUID id : hm.keySet())
+        {
+            if(hm.get(id).equals(value))
+                return id;
+        }
+        return null;
     }
 }

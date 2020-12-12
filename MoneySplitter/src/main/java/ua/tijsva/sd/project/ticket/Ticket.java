@@ -79,10 +79,12 @@ public abstract class Ticket
     @Override
     public String toString()
     {
-        return "Ticket{" +
-                "ticketType='" + ticketType + '\'' +
-                ", paidPerson=" + Database.getPersonDB().get(paidPerson).getName() +
-                ", price=" + price +
-                '}';
+        String string = String.format("%s : %.2f paid by %s. Persons: ",ticketType,price,Database.getPersonDB().get(paidPerson).getName());
+        for (UUID id: this.indebted.keySet())
+        {
+            string += String.format("%s, ",Database.getPersonDB().get(id).getName());
+        }
+        string = string.substring(0, string.length() -2);
+        return string;
     }
 }

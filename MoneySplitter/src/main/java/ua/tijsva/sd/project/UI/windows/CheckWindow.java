@@ -8,8 +8,10 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.Observable;
+import java.util.Observer;
 
-public class CheckWindow extends JFrame implements ActionListener
+public class CheckWindow extends JFrame implements ActionListener, Observer
 {
 
     public CheckWindow()
@@ -17,6 +19,8 @@ public class CheckWindow extends JFrame implements ActionListener
         super("MoneySplitter");
         this.setSize(500,300);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        Database.getTicketDB().addObserver(this);
+        Database.getPersonDB().addObserver(this);
 
         initialise();
         this.setVisible(true);
@@ -39,14 +43,14 @@ public class CheckWindow extends JFrame implements ActionListener
 
         Check check = new Check(Database.getTicketDB(), Database.getPersonDB());
         JTextArea textArea = new JTextArea(check.print());
+        c.gridy = 1;
+        this.add(textArea, c);
 
-        this.add(textArea, BorderLayout.PAGE_START);
-
-
+        c.gridx = 0;
+        c.gridy = 2;
         JButton backButton = new JButton("Back");
-        backButton.setFont(new Font("Sans", Font.PLAIN, 10));
         backButton.addActionListener(this);
-        this.add(backButton,BorderLayout.SOUTH);
+        this.add(backButton, c);
 
     }
 
@@ -59,5 +63,12 @@ public class CheckWindow extends JFrame implements ActionListener
             this.setVisible(false);
             this.dispose();
         }
+    }
+
+    @Override
+    public void update(Observable o, Object arg)
+    {
+        this.setVisible(false);
+        this.dispose();
     }
 }

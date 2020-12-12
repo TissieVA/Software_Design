@@ -57,7 +57,6 @@ public class TicketDBPanel extends JPanel implements ActionListener, Observer
 
     public void refresh()
     {
-
         listModel.clear();
         Database.getTicketDB().forEach(listModel::addElement);
 
