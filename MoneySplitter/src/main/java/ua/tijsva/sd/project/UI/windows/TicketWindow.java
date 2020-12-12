@@ -139,6 +139,7 @@ public class TicketWindow extends JFrame implements ActionListener
             case "Cancel":
                 this.setVisible(false);
                 this.dispose();
+                break;
 
             case "Create Ticket":
                 if(isEqualSplitTicket)
@@ -152,9 +153,11 @@ public class TicketWindow extends JFrame implements ActionListener
                     this.setVisible(false);
                     this.dispose();
                 }
+                break;
 
             default:
                 System.out.println(e.getActionCommand());
+                break;
 
         }
         SwingUtilities.updateComponentTreeUI(this);

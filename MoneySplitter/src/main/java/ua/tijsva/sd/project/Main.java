@@ -25,7 +25,9 @@ public class Main
         Database.getPersonDB().add(p2.getId(),p2);
         Database.getPersonDB().add(p3.getId(),p3);
         Controller controller = new Controller();
-        //EqualSplitTicket t1 = (EqualSplitTicket) controller.createTicket(new EqualTicketFactory(),"azerty",p1);
+        EqualSplitTicket t1 = (EqualSplitTicket) controller.createTicket(new EqualTicketFactory(),"azerty",p1);
+        t1.setPrice(20);
+        t1.addIndebted(p2);
     }
 
     void run()
