@@ -16,7 +16,7 @@ public class PersonWindow extends JFrame implements ActionListener
     {
         super("MoneySplitter");
         this.setSize(500,300);
-        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
         initialise();
         this.setVisible(true);

@@ -18,7 +18,7 @@ public class CheckWindow extends JFrame implements ActionListener, Observer
     {
         super("MoneySplitter");
         this.setSize(500,300);
-        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         Database.getTicketDB().addObserver(this);
         Database.getPersonDB().addObserver(this);
 

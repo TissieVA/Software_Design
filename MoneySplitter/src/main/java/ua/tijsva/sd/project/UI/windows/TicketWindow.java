@@ -35,7 +35,7 @@ public class TicketWindow extends JFrame implements ActionListener
         super("MoneySplitter");
         this.controller = controller;
         this.setSize(500,300);
-        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
         initialise();
         this.setVisible(true);
