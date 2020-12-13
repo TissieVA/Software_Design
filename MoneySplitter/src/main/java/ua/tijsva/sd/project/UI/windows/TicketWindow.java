@@ -64,7 +64,7 @@ public class TicketWindow extends JFrame implements ActionListener
         this.paidPersonComboBox = new JComboBox<Object>( personArrayList.toArray());
         JScrollPane personPane = new JScrollPane(paidPersonComboBox);
 
-        SpinnerNumberModel model = new SpinnerNumberModel(50,0,Double.POSITIVE_INFINITY,1);
+        SpinnerNumberModel model = new SpinnerNumberModel(0,0,Double.POSITIVE_INFINITY,1);
         this.priceField = new JSpinner(model);
         JScrollPane pricePane = new JScrollPane(priceField);
 

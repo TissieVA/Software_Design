@@ -11,6 +11,7 @@ import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.Observable;
 import java.util.Observer;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 public class PersonDBPanel extends JPanel implements ActionListener, Observer
 {
@@ -74,8 +75,22 @@ public class PersonDBPanel extends JPanel implements ActionListener, Observer
                 break;
 
             case "-":
-                if(list.getSelectedValue() != null)
-                    Database.getPersonDB().remove(list.getSelectedValue().getId());
+                AtomicBoolean error = new AtomicBoolean(false);
+                if(list.getSelectedValue() != null) {
+                    Database.getTicketDB().forEach(ticket ->
+                    {
+                        if (ticket.getPaidPerson().equals(list.getSelectedValue().getId()))
+                            error.set(true);
+                        else if (ticket.getIndebted().containsKey(list.getSelectedValue().getId()))
+                            error.set(true);
+                    });
+
+                    if(!error.get())
+                        Database.getPersonDB().remove(list.getSelectedValue().getId());
+                    else
+                        JOptionPane.showMessageDialog(null,"Remove the tickets that contains this person", "Warning", JOptionPane.WARNING_MESSAGE);
+
+                }
                 break;
         }
         refresh();

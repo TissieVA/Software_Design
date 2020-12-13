@@ -77,7 +77,7 @@ public class UnequalSplitPanel extends JPanel implements ActionListener, ITicket
             comboBox.addActionListener(this);
             JScrollPane personPane = new JScrollPane(comboBox);
 
-            SpinnerNumberModel model = new SpinnerNumberModel(15, 0, Double.POSITIVE_INFINITY, 1);
+            SpinnerNumberModel model = new SpinnerNumberModel(0, 0, Double.POSITIVE_INFINITY, 1);
             JSpinner priceField = new JSpinner(model);
             spinnersArray.add(priceField);
             JScrollPane pricePane = new JScrollPane(priceField);
