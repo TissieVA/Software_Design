@@ -58,7 +58,7 @@ public class Check
             result = Math.round(result* 100.0)/100.0;
             if(result>=0.1)
             {
-                solution.add(String.format("%s -> %s : %.2f%n",Database.getPersonDB().get(minPricePerson).getName(),Database.getPersonDB().get(maxPricePerson).getName(),Math.abs(minPrice)));
+                solution.add(String.format("%s -> %s : %.2f\n",Database.getPersonDB().get(minPricePerson).getName(),Database.getPersonDB().get(maxPricePerson).getName(),Math.abs(minPrice)));
 
                 listing.remove(maxPricePerson);
                 listing.remove(minPricePerson);
@@ -67,7 +67,7 @@ public class Check
             }
             else
             {
-                solution.add(String.format("%s -> %s : %.2f%n",Database.getPersonDB().get(minPricePerson).getName(),Database.getPersonDB().get(maxPricePerson).getName(),Math.abs(maxPrice)));
+                solution.add(String.format("%s -> %s : %.2f\n",Database.getPersonDB().get(minPricePerson).getName(),Database.getPersonDB().get(maxPricePerson).getName(),Math.abs(maxPrice)));
                 listing.remove(maxPricePerson);
                 listing.remove(minPricePerson);
                 listing.put(minPricePerson, result);
