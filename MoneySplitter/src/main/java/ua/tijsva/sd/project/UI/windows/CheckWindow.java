@@ -70,7 +70,6 @@ public class CheckWindow extends JFrame implements ActionListener, Observer
 
     }
 
-
     @Override
     public void actionPerformed(ActionEvent e)
     {
@@ -97,9 +96,6 @@ public class CheckWindow extends JFrame implements ActionListener, Observer
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-
-
     }
 
     private void WriteToFile()

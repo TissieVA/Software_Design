@@ -6,7 +6,6 @@ import ua.tijsva.sd.project.database.Database;
 import ua.tijsva.sd.project.person.Person;
 import ua.tijsva.sd.project.ticket.*;
 
-import java.util.UUID;
 
 public class Main
 {
