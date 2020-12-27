@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import ua.tijsva.sd.project.database.Database;
 import ua.tijsva.sd.project.person.Person;
 
 import java.lang.reflect.Array;
@@ -17,11 +18,15 @@ public class EqualSplitTicketTest {
     ArrayList<Person> persons;
 
     @Before
-    public void Initialize()
+    public void initialize()
     {
         Person p1 = new Person("A");
         Person p2 = new Person("B");
         Person p3 = new Person("C");
+
+        Database.getPersonDB().add(p1.getId(),p1);
+        Database.getPersonDB().add(p2.getId(),p2);
+        Database.getPersonDB().add(p3.getId(),p3);
 
 
         Person[] pa = new Person[]{p1,p2,p3};

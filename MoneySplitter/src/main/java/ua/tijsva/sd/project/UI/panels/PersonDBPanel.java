@@ -88,7 +88,7 @@ public class PersonDBPanel extends JPanel implements ActionListener, Observer
                     if(!error.get())
                         Database.getPersonDB().remove(list.getSelectedValue().getId());
                     else
-                        JOptionPane.showMessageDialog(null,"Remove the tickets that contains this person", "Warning", JOptionPane.WARNING_MESSAGE);
+                        JOptionPane.showMessageDialog(null,"Remove the tickets containing this person", "Warning", JOptionPane.WARNING_MESSAGE);
 
                 }
                 break;

@@ -42,17 +42,17 @@ public class TicketDBPanel extends JPanel implements ActionListener, Observer
         c.gridy = 1;
         this.add(list,c);
 
-        JButton addPersonButton = new JButton("+");
-        addPersonButton.addActionListener(this);
+        JButton addTicketButton = new JButton("+");
+        addTicketButton.addActionListener(this);
         c.gridy = 2;
         c.gridx = 0;
-        this.add(addPersonButton,c);
+        this.add(addTicketButton,c);
 
-        JButton removePersonButton = new JButton("-");
-        removePersonButton.addActionListener(this);
+        JButton removeTicketButton = new JButton("-");
+        removeTicketButton.addActionListener(this);
         c.gridy = 2;
         c.gridx = 2;
-        this.add(removePersonButton,c);
+        this.add(removeTicketButton,c);
     }
 
     public void refresh()

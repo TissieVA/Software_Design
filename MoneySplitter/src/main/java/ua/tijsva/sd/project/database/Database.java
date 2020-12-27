@@ -26,7 +26,8 @@ public class Database<T> extends Observable implements Iterable<T>
 
     public void remove(UUID id)
     {
-        this.dbMap.remove(id);
+        if(dbMap.containsKey(id))
+            this.dbMap.remove(id);
         this.setChanged();
         this.notifyObservers();
     }
@@ -54,6 +55,10 @@ public class Database<T> extends Observable implements Iterable<T>
         return ticketDB;
     }
 
+    public Integer getSize()
+    {
+        return this.dbMap.size();
+    }
 
     @Override
     public Iterator<T> iterator()

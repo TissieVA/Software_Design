@@ -13,7 +13,6 @@ public class EqualSplitTicket extends Ticket
     public EqualSplitTicket(String ticketType, UUID paidPerson)
     {
         super(ticketType, paidPerson);
-        addIndebted(Database.getPersonDB().get(paidPerson));
     }
 
     public void setPrice(double price)

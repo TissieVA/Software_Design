@@ -7,5 +7,4 @@ import ua.tijsva.sd.project.ticket.Ticket;
 public interface ITicketPanel
 {
     Ticket create(String ticketType, Person paidPerson, double price, Controller controller);
-
 }

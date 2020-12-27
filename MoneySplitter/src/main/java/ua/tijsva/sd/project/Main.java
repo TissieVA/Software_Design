@@ -26,6 +26,7 @@ public class Main
         Controller controller = new Controller();
         EqualSplitTicket t1 = (EqualSplitTicket) controller.createTicket(new EqualTicketFactory(),"azerty",p1);
         t1.setPrice(20);
+        t1.addIndebted(p1);
         t1.addIndebted(p2);
     }
 
