@@ -63,7 +63,7 @@ public abstract class Ticket
 
     public Boolean addIndebted(Person person)
     {
-        if(this.indebted.containsKey(person))
+        if(this.indebted.containsKey(person.getId()))
             return false;
 
         this.indebted.put(person.getId(),0.0);

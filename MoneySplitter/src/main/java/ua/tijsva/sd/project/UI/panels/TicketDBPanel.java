@@ -1,7 +1,6 @@
 package ua.tijsva.sd.project.UI.panels;
 
-import com.sun.javaws.jnl.RContentDesc;
-import ua.tijsva.sd.project.UI.windows.PersonWindow;
+
 import ua.tijsva.sd.project.UI.windows.TicketWindow;
 import ua.tijsva.sd.project.controller.Controller;
 import ua.tijsva.sd.project.database.Database;
@@ -11,7 +10,6 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.ArrayList;
 import java.util.Observable;
 import java.util.Observer;
 

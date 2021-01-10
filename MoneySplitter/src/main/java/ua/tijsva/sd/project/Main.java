@@ -17,9 +17,11 @@ public class Main
 
     public Main()
     {
+        //DEMO MODE
+		/*
         Person p1 = new Person("Alberto Vermicelli");
-        Person p2 = new Person("B");
-        Person p3 = new Person("C");
+        Person p2 = new Person("Samson");
+        Person p3 = new Person("Gert");
         Database.getPersonDB().add(p1.getId(),p1);
         Database.getPersonDB().add(p2.getId(),p2);
         Database.getPersonDB().add(p3.getId(),p3);
@@ -28,6 +30,8 @@ public class Main
         t1.setPrice(20);
         t1.addIndebted(p1);
         t1.addIndebted(p2);
+		*/
+
     }
 
     void run()

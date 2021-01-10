@@ -3,7 +3,6 @@ package ua.tijsva.sd.project.UI;
 import ua.tijsva.sd.project.UI.panels.PersonDBPanel;
 import ua.tijsva.sd.project.UI.panels.TicketDBPanel;
 import ua.tijsva.sd.project.UI.windows.CheckWindow;
-import ua.tijsva.sd.project.check.Check;
 import ua.tijsva.sd.project.controller.Controller;
 import ua.tijsva.sd.project.database.Database;
 
@@ -14,8 +13,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Observable;
 import java.util.Observer;
- //https://docs.oracle.com/javase/tutorial/uiswing/layout/gridbag.html
-//https://docs.oracle.com/javase/tutorial/uiswing/examples/layout/GridBagLayoutDemoProject/src/layout/GridBagLayoutDemo.java
 
 public class UIFrame extends JFrame implements Observer, ActionListener
 {

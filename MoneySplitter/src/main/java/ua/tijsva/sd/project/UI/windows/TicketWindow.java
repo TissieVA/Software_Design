@@ -7,13 +7,9 @@ import ua.tijsva.sd.project.database.Database;
 import ua.tijsva.sd.project.person.Person;
 
 import javax.swing.*;
-import javax.swing.text.AbstractDocument;
-import javax.swing.text.DocumentFilter;
-import javax.swing.text.StyledDocument;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.WindowEvent;
 import java.util.ArrayList;
 
 public class TicketWindow extends JFrame implements ActionListener

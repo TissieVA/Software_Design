@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="moneysplitter" version="4">
+  <OBJECT>
+    <ID name="moneysplitter" mc="Standard.Package" uid="572f4b38-8545-4ade-9362-47114112de96"/>
+    <PID name="MoneySplitter" mc="Standard.Project" uid="5778d3d2-c776-42ad-ae3e-33ac9e66aee9"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[moneysplitter]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="Interaction" mc="Standard.Interaction" uid="bdda41bc-54a6-4b6c-91a0-43a5d40c327b"/>
+      </COMP>
+      <COMP relation="OwnedElement">
+        <COMPID name="java" mc="Standard.Package" uid="5a631a20-41ad-4f62-9324-2546921f6c7d"/>
+        <COMPID name="ua" mc="Standard.Package" uid="d114895f-2dc9-42fc-a06f-751303c49cdc"/>
+        <COMPID name="App user" mc="Standard.Actor" uid="c6756ff7-33db-43aa-be1b-e219c5323eed"/>
+        <COMPID name="Add person" mc="Standard.UseCase" uid="0698efd2-b564-4274-b907-f76d4ae36673"/>
+        <COMPID name="generate UUID" mc="Standard.UseCase" uid="fdbf2918-eb2f-4577-96bc-0ec49a89e6bd"/>
+        <COMPID name="Add to Database" mc="Standard.UseCase" uid="af4919db-33bf-436e-805e-67e24ad3a3cd"/>
+        <COMPID name="Remove person" mc="Standard.UseCase" uid="5ec5cb3c-098e-4f8e-ad37-cdda2663ee80"/>
+        <COMPID name="Remove from Database" mc="Standard.UseCase" uid="b33afc3f-c46d-4c59-a89d-6aa938455e16"/>
+        <COMPID name="Create ticket" mc="Standard.UseCase" uid="1714a63f-79f9-4a4b-9407-55c7eab50bbc"/>
+        <COMPID name="remove ticket" mc="Standard.UseCase" uid="f19a355a-1efc-452e-b38d-86ac210a0702"/>
+        <COMPID name="Calculate" mc="Standard.UseCase" uid="d91db32f-2e22-4c6e-af28-f526946c2f6e"/>
+        <COMPID name="Write to file" mc="Standard.UseCase" uid="4712dec6-10a6-4b2e-a29a-91de16b3b6f1"/>
+        <COMPID name="Verify no tickets containing this person" mc="Standard.UseCase" uid="34462c23-0d43-4448-a46e-22ce6937f36e"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="MoneySplitter class diagram" mc="Standard.ClassDiagram" uid="8daca5bf-4c89-4003-a9c3-669a96586067"/>
+        <COMPID name="MoneySplitter Use Case diagram" mc="Standard.UseCaseDiagram" uid="55805964-4250-4e18-99e9-88b4a07c705f"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

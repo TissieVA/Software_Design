@@ -1,10 +1,7 @@
 package ua.tijsva.sd.project.ticket;
 
 import ua.tijsva.sd.project.person.Person;
-
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.UUID;
 
 public class UnequalSplitTicket extends Ticket

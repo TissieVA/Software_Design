@@ -1,0 +1,42 @@
+********************************
+23:29:14 10/01/2021
+
+Tickets: 
+
+Drank : 41,00 paid by Gert. Persons: Frida Kroket, Samson, Gert
+Frietjes : 30,00 paid by Frida Kroket. Persons: Frida Kroket, Samson, Gert
+Snoepjes : 20,00 paid by Alberto. Persons: Frida Kroket, Samson, Gert, Alberto
+
+Check calculation: 
+
+Samson -> Alberto : 15,00
+Samson -> Gert : 14,00
+Samson -> Frida Kroket : 4,00
+********************************
+23:29:14 10/01/2021
+
+Tickets: 
+
+Drank : 41,00 paid by Gert. Persons: Frida Kroket, Samson, Gert
+Frietjes : 30,00 paid by Frida Kroket. Persons: Frida Kroket, Samson, Gert
+Snoepjes : 20,00 paid by Alberto. Persons: Frida Kroket, Samson, Gert, Alberto
+
+Check calculation: 
+
+Samson -> Alberto : 15,00
+Samson -> Gert : 14,00
+Samson -> Frida Kroket : 4,00
+********************************
+23:29:15 10/01/2021
+
+Tickets: 
+
+Drank : 41,00 paid by Gert. Persons: Frida Kroket, Samson, Gert
+Frietjes : 30,00 paid by Frida Kroket. Persons: Frida Kroket, Samson, Gert
+Snoepjes : 20,00 paid by Alberto. Persons: Frida Kroket, Samson, Gert, Alberto
+
+Check calculation: 
+
+Samson -> Alberto : 15,00
+Samson -> Gert : 14,00
+Samson -> Frida Kroket : 4,00

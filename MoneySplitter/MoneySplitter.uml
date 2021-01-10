@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>ua.tijsva.sd.project</OriginalElement>
+  <nodes>
+    <node x="443.4" y="1174.0">ua.tijsva.sd.project.ticket.EqualTicketFactory</node>
+    <node x="518.8751016260164" y="1282.0">ua.tijsva.sd.project.ticket.TicketFactory</node>
+    <node x="510.65" y="943.0">ua.tijsva.sd.project.ticket.EqualSplitTicket</node>
+    <node x="283.0" y="196.0">ua.tijsva.sd.project.database.Database</node>
+    <node x="1068.9" y="0.0">ua.tijsva.sd.project.Main</node>
+    <node x="10.5" y="888.0">ua.tijsva.sd.project.check.Check</node>
+    <node x="184.0001016260165" y="1500.0">ua.tijsva.sd.project.controller.Controller</node>
+    <node x="758.4" y="932.0">ua.tijsva.sd.project.ticket.UnequalSplitTicket</node>
+    <node x="396.5" y="0.0">ua.tijsva.sd.project.person.Person</node>
+    <node x="691.4" y="1174.0">ua.tijsva.sd.project.ticket.UnequalTicketFactory</node>
+    <node x="420.8668360433605" y="571.0">ua.tijsva.sd.project.ticket.Ticket</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="ua.tijsva.sd.project.check.Check" target="ua.tijsva.sd.project.ticket.Ticket">
+      <point x="90.5" y="-118.0" />
+      <point x="282.0" y="828.0" />
+      <point x="432.7168360433605" y="828.0" />
+      <point x="-106.64999999999998" y="118.5" />
+    </edge>
+    <edge source="ua.tijsva.sd.project.controller.Controller" target="ua.tijsva.sd.project.person.Person">
+      <point x="-149.2500000000001" y="-62.0" />
+      <point x="233.75010162601637" y="1475.0" />
+      <point x="0.0" y="1475.0" />
+      <point x="0.0" y="146.0" />
+      <point x="403.8888888888889" y="146.0" />
+      <point x="-59.111111111111086" y="63.0" />
+    </edge>
+    <edge source="ua.tijsva.sd.project.ticket.EqualTicketFactory" target="ua.tijsva.sd.project.ticket.Ticket">
+      <point x="-57.0" y="-29.0" />
+      <point x="500.15" y="868.0" />
+      <point x="527.5168360433604" y="868.0" />
+      <point x="-11.850000000000023" y="118.5" />
+    </edge>
+    <edge source="ua.tijsva.sd.project.controller.Controller" target="ua.tijsva.sd.project.database.Database">
+      <point x="-49.750000000000114" y="-62.0" />
+      <point x="333.2501016260164" y="1475.0" />
+      <point x="383.0" y="1475.0" />
+      <point x="-20.0" y="162.5" />
+    </edge>
+    <edge source="ua.tijsva.sd.project.database.Database" target="ua.tijsva.sd.project.ticket.Ticket">
+      <point x="60.0" y="162.5" />
+      <point x="463.0" y="551.0" />
+      <point x="509.7418360433605" y="551.0" />
+      <point x="-29.625" y="-118.5" />
+    </edge>
+    <edge source="ua.tijsva.sd.project.controller.Controller" target="ua.tijsva.sd.project.ticket.TicketFactory">
+      <point x="149.2499999999999" y="-62.0" />
+      <point x="532.2501016260164" y="1475.0" />
+      <point x="679.8751016260164" y="1475.0" />
+      <point x="0.0" y="84.0" />
+    </edge>
+    <edge source="ua.tijsva.sd.project.ticket.EqualSplitTicket" target="ua.tijsva.sd.project.person.Person">
+      <point x="69.33333333333331" y="-63.0" />
+      <point x="683.9833333333333" y="868.0" />
+      <point x="689.8585027100271" y="868.0" />
+      <point x="689.8585027100271" y="166.0" />
+      <point x="492.55555555555566" y="166.0" />
+      <point x="29.555555555555657" y="63.0" />
+    </edge>
+    <edge source="ua.tijsva.sd.project.ticket.UnequalSplitTicket" target="ua.tijsva.sd.project.ticket.Ticket">
+      <point x="-83.0" y="-74.0" />
+      <point x="799.9" y="848.0" />
+      <point x="622.3168360433604" y="848.0" />
+      <point x="82.94999999999993" y="118.5" />
+    </edge>
+    <edge source="ua.tijsva.sd.project.ticket.TicketFactory" target="ua.tijsva.sd.project.person.Person">
+      <point x="134.16666666666663" y="-84.0" />
+      <point x="814.041768292683" y="1262.0" />
+      <point x="1017.9" y="1262.0" />
+      <point x="1017.9" y="146.0" />
+      <point x="522.1111111111111" y="146.0" />
+      <point x="59.111111111111086" y="63.0" />
+    </edge>
+    <edge source="ua.tijsva.sd.project.ticket.EqualTicketFactory" target="ua.tijsva.sd.project.ticket.EqualSplitTicket">
+      <point x="57.0" y="-29.0" />
+      <point x="0.0" y="63.0" />
+    </edge>
+    <edge source="ua.tijsva.sd.project.ticket.Ticket" target="ua.tijsva.sd.project.person.Person">
+      <point x="88.875" y="-118.5" />
+      <point x="628.2418360433605" y="551.0" />
+      <point x="600.875" y="551.0" />
+      <point x="600.875" y="176.0" />
+      <point x="477.7777777777778" y="176.0" />
+      <point x="14.777777777777828" y="63.0" />
+    </edge>
+    <edge source="ua.tijsva.sd.project.check.Check" target="ua.tijsva.sd.project.person.Person">
+      <point x="-90.5" y="-118.0" />
+      <point x="101.0" y="868.0" />
+      <point x="114.58102981029816" y="868.0" />
+      <point x="114.58102981029816" y="166.0" />
+      <point x="433.44444444444434" y="166.0" />
+      <point x="-29.555555555555657" y="63.0" />
+    </edge>
+    <edge source="ua.tijsva.sd.project.controller.Controller" target="ua.tijsva.sd.project.ticket.Ticket">
+      <point x="49.749999999999886" y="-62.0" />
+      <point x="432.7501016260164" y="1475.0" />
+      <point x="408.07500000000005" y="1475.0" />
+      <point x="408.07500000000005" y="848.0" />
+      <point x="480.1168360433605" y="848.0" />
+      <point x="-59.25" y="118.5" />
+    </edge>
+    <edge source="ua.tijsva.sd.project.ticket.Ticket" target="ua.tijsva.sd.project.database.Database">
+      <point x="-88.875" y="-118.5" />
+      <point x="450.4918360433605" y="551.0" />
+      <point x="423.0" y="551.0" />
+      <point x="20.0" y="162.5" />
+    </edge>
+    <edge source="ua.tijsva.sd.project.database.Database" target="ua.tijsva.sd.project.person.Person">
+      <point x="-60.0" y="-162.5" />
+      <point x="343.0" y="176.0" />
+      <point x="448.2222222222222" y="176.0" />
+      <point x="-14.777777777777828" y="63.0" />
+    </edge>
+    <edge source="ua.tijsva.sd.project.ticket.TicketFactory" target="ua.tijsva.sd.project.ticket.EqualTicketFactory">
+      <point x="-80.5" y="-84.0" />
+      <point x="599.3751016260164" y="1252.0" />
+      <point x="500.4" y="1252.0" />
+      <point x="-57.0" y="29.0" />
+    </edge>
+    <edge source="ua.tijsva.sd.project.ticket.UnequalTicketFactory" target="ua.tijsva.sd.project.ticket.UnequalSplitTicket">
+      <point x="62.0" y="-29.0" />
+      <point x="877.4" y="1149.0" />
+      <point x="882.9" y="1149.0" />
+      <point x="0.0" y="74.0" />
+    </edge>
+    <edge source="ua.tijsva.sd.project.ticket.TicketFactory" target="ua.tijsva.sd.project.ticket.UnequalTicketFactory">
+      <point x="26.83333333333337" y="-84.0" />
+      <point x="706.7084349593497" y="1262.0" />
+      <point x="753.4" y="1262.0" />
+      <point x="-62.0" y="29.0" />
+    </edge>
+    <edge source="ua.tijsva.sd.project.ticket.UnequalTicketFactory" target="ua.tijsva.sd.project.ticket.TicketFactory">
+      <point x="62.0" y="29.0" />
+      <point x="877.4" y="1252.0" />
+      <point x="760.3751016260164" y="1252.0" />
+      <point x="80.5" y="-84.0" />
+    </edge>
+    <edge source="ua.tijsva.sd.project.ticket.EqualTicketFactory" target="ua.tijsva.sd.project.ticket.TicketFactory">
+      <point x="57.0" y="29.0" />
+      <point x="614.4" y="1262.0" />
+      <point x="653.041768292683" y="1262.0" />
+      <point x="-26.83333333333337" y="-84.0" />
+    </edge>
+    <edge source="ua.tijsva.sd.project.ticket.EqualSplitTicket" target="ua.tijsva.sd.project.ticket.Ticket">
+      <point x="0.0" y="-63.0" />
+      <point x="614.65" y="868.0" />
+      <point x="574.9168360433605" y="868.0" />
+      <point x="35.549999999999955" y="118.5" />
+    </edge>
+    <edge source="ua.tijsva.sd.project.ticket.UnequalSplitTicket" target="ua.tijsva.sd.project.person.Person">
+      <point x="83.0" y="-74.0" />
+      <point x="965.9" y="868.0" />
+      <point x="934.2082655826559" y="868.0" />
+      <point x="934.2082655826559" y="156.0" />
+      <point x="507.33333333333326" y="156.0" />
+      <point x="44.33333333333326" y="63.0" />
+    </edge>
+    <edge source="ua.tijsva.sd.project.ticket.UnequalTicketFactory" target="ua.tijsva.sd.project.ticket.Ticket">
+      <point x="-62.0" y="-29.0" />
+      <point x="753.4" y="1149.0" />
+      <point x="747.9" y="1149.0" />
+      <point x="747.9" y="858.0" />
+      <point x="598.6168360433603" y="858.0" />
+      <point x="59.249999999999886" y="118.5" />
+    </edge>
+    <edge source="ua.tijsva.sd.project.ticket.TicketFactory" target="ua.tijsva.sd.project.ticket.Ticket">
+      <point x="-134.16666666666663" y="-84.0" />
+      <point x="545.7084349593497" y="1262.0" />
+      <point x="432.2416666666667" y="1262.0" />
+      <point x="432.2416666666667" y="858.0" />
+      <point x="503.8168360433604" y="858.0" />
+      <point x="-35.55000000000007" y="118.5" />
+    </edge>
+    <edge source="ua.tijsva.sd.project.check.Check" target="ua.tijsva.sd.project.database.Database">
+      <point x="30.166666666666742" y="-118.0" />
+      <point x="221.66666666666674" y="868.0" />
+      <point x="188.79993224932264" y="868.0" />
+      <point x="188.79993224932264" y="551.0" />
+      <point x="343.0" y="551.0" />
+      <point x="-60.0" y="162.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.3309002433090024" x="609.0" y="812.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

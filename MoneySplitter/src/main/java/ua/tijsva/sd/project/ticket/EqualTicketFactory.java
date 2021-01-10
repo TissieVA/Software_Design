@@ -1,6 +1,5 @@
 package ua.tijsva.sd.project.ticket;
 
-import java.util.ArrayList;
 import java.util.UUID;
 
 public class EqualTicketFactory extends TicketFactory

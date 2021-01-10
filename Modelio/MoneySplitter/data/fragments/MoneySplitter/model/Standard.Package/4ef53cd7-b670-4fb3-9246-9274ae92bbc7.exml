@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="ticket" version="4">
+  <OBJECT>
+    <ID name="ticket" mc="Standard.Package" uid="4ef53cd7-b670-4fb3-9246-9274ae92bbc7"/>
+    <PID name="project" mc="Standard.Package" uid="1c0f7253-3469-4104-9a1b-e6746aa896e2"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[ticket]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="UnequalSplitTicket" mc="Standard.Class" uid="460cd15a-ffa5-4420-8335-965c49849277"/>
+        <COMPID name="TicketFactory" mc="Standard.Class" uid="740ee7c9-5d6f-435a-afed-bfa915376111"/>
+        <COMPID name="EqualTicketFactory" mc="Standard.Class" uid="2d5cdad3-cce1-4028-a5bb-02000d4328f9"/>
+        <COMPID name="UnequalTicketFactory" mc="Standard.Class" uid="e265854d-06fe-4ff1-bfe6-9e828329bbb9"/>
+        <COMPID name="EqualSplitTicket" mc="Standard.Class" uid="21e56592-9f51-4a48-8e18-c69ab2ff25b6"/>
+        <COMPID name="Ticket" mc="Standard.Class" uid="f30ef237-e0a3-443b-9d8f-9b1e1bf4b4dd"/>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="JavaPackage" mc="Infrastructure.Stereotype" uid="01ec23a8-0000-0126-0000-000000000000"/>
+      </LINK>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

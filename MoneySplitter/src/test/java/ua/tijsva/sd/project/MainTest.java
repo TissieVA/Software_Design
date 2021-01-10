@@ -83,12 +83,14 @@ public class MainTest
     @Test
     public void t_calculate1()
     {
+        est.addIndebted(p1);
         est.addIndebted(p2);
         est.addIndebted(p3);
         est.setPrice(30.0);
 
         EqualSplitTicket est2 = (EqualSplitTicket) controller.createTicket(new EqualTicketFactory(),"EqualTicket2",p2);
         est2.addIndebted(p1);
+        est2.addIndebted(p2);
         est2.addIndebted(p3);
         est2.setPrice(15.0);
 
@@ -111,6 +113,7 @@ public class MainTest
         Person p4 = new Person("D");
         Database.getPersonDB().add(p4.getId(),p4);
 
+        est.addIndebted(p1);
         est.addIndebted(p2);
         est.addIndebted(p3);
         est.addIndebted(p4);
@@ -120,11 +123,13 @@ public class MainTest
         est2.addIndebted(p1);
         est2.addIndebted(p2);
         est2.addIndebted(p3);
+        est2.addIndebted(p4);
         est2.setPrice(129.15);
 
         EqualSplitTicket est3 = (EqualSplitTicket) controller.createTicket(new EqualTicketFactory(),"est3",p4);
         est3.addIndebted(p1);
         est3.addIndebted(p2);
+        est3.addIndebted(p4);
         est3.setPrice(27.15);
 
         UnequalSplitTicket ust2 = (UnequalSplitTicket) controller.createTicket(new UnequalTicketFactory(),"ust2",p3);

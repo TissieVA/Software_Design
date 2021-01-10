@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="project" version="4">
+  <OBJECT>
+    <ID name="project" mc="Standard.Package" uid="1c0f7253-3469-4104-9a1b-e6746aa896e2"/>
+    <PID name="sd" mc="Standard.Package" uid="63a530db-0383-4a8e-b970-b4405199e9c6"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[project]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="ticket" mc="Standard.Package" uid="4ef53cd7-b670-4fb3-9246-9274ae92bbc7"/>
+        <COMPID name="person" mc="Standard.Package" uid="153aa3db-fa80-4d3f-bc6d-dcb873749ed5"/>
+        <COMPID name="check" mc="Standard.Package" uid="1f58b109-8206-439b-870d-df450747dd52"/>
+        <COMPID name="database" mc="Standard.Package" uid="b354123c-6c5e-4e50-90e1-00d582bf4c36"/>
+        <COMPID name="controller" mc="Standard.Package" uid="b13b8f00-ee0f-40c3-a7e0-40778633eade"/>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="JavaPackage" mc="Infrastructure.Stereotype" uid="01ec23a8-0000-0126-0000-000000000000"/>
+      </LINK>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

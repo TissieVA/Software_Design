@@ -2,7 +2,6 @@ package ua.tijsva.sd.project.UI.panels;
 
 import ua.tijsva.sd.project.controller.Controller;
 import ua.tijsva.sd.project.database.Database;
-import ua.tijsva.sd.project.UI.panels.ITicketPanel;
 import ua.tijsva.sd.project.person.Person;
 import ua.tijsva.sd.project.ticket.EqualSplitTicket;
 import ua.tijsva.sd.project.ticket.EqualTicketFactory;
@@ -13,7 +12,6 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
-import java.util.Observable;
 
 public class EqualSplitPanel extends JPanel implements ActionListener, ITicketPanel
 {
@@ -28,7 +26,6 @@ public class EqualSplitPanel extends JPanel implements ActionListener, ITicketPa
     public EqualSplitPanel()
     {
         this.setLayout(new GridBagLayout());
-        Insets inset = new Insets(10,10,10,10);
 
         JLabel label = new JLabel("Add persons to ticket");
         addComponent(label,0,0,1,1,new Insets(10,50,10,10),false);

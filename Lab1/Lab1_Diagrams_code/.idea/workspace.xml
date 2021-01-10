@@ -1,7 +1,404 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f146294d-97a3-49d0-9ebb-1f8c7d8d4553" name="Default Changelist" comment="" />
+    <list default="true" id="f146294d-97a3-49d0-9ebb-1f8c7d8d4553" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../Lab2/Lab2/Lab2/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2/Lab2/Lab2/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MoneySplitter/src/main/java/ua/tijsva/sd/project/UI/UI.plantuml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MoneySplitter/src/main/java/ua/tijsva/sd/project/UI/panels/panels.plantuml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MoneySplitter/src/main/java/ua/tijsva/sd/project/UI/windows/windows.plantuml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab2/Lab2/Lab2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab2/Lab2/Lab2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MoneySplitter/src/main/java/ua/tijsva/sd/project/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../MoneySplitter/src/main/java/ua/tijsva/sd/project/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MoneySplitter/src/main/java/ua/tijsva/sd/project/check/Check.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../MoneySplitter/src/main/java/ua/tijsva/sd/project/check/Check.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MoneySplitter/src/test/java/ua/tijsva/sd/project/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../MoneySplitter/src/test/java/ua/tijsva/sd/project/MainTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/Lab1_Diagrams/.runtime/projectInfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../workspace/Lab1_Diagrams/.runtime/projectInfo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/Lab1_Diagrams/data/localmodel/localmodel.dbf.0" beforeDir="false" afterPath="$PROJECT_DIR$/../../workspace/Lab1_Diagrams/data/localmodel/localmodel.dbf.0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/Lab1_Diagrams/data/localmodel/localmodel.dbf.t" beforeDir="false" afterPath="$PROJECT_DIR$/../../workspace/Lab1_Diagrams/data/localmodel/localmodel.dbf.t" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/Lab1_Diagrams/data/localmodel/localmodel.dbr.t" beforeDir="false" afterPath="$PROJECT_DIR$/../../workspace/Lab1_Diagrams/data/localmodel/localmodel.dbr.t" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/Lab1_Diagrams/data/localmodel/localmodel.idf.0" beforeDir="false" afterPath="$PROJECT_DIR$/../../workspace/Lab1_Diagrams/data/localmodel/localmodel.idf.0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/Lab1_Diagrams/data/localmodel/localmodel.idf.t" beforeDir="false" afterPath="$PROJECT_DIR$/../../workspace/Lab1_Diagrams/data/localmodel/localmodel.idf.t" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/Lab1_Diagrams/data/localmodel/localmodel.idr.0" beforeDir="false" afterPath="$PROJECT_DIR$/../../workspace/Lab1_Diagrams/data/localmodel/localmodel.idr.0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/Lab1_Diagrams/data/localmodel/localmodel.idr.t" beforeDir="false" afterPath="$PROJECT_DIR$/../../workspace/Lab1_Diagrams/data/localmodel/localmodel.idr.t" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/Lab2/.runtime/.save" beforeDir="false" afterPath="$PROJECT_DIR$/../../workspace/Lab2/.runtime/.save" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/Lab2/.runtime/projectInfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../workspace/Lab2/.runtime/projectInfo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/.runtime/.save" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/.runtime/fragments/lab4/.index/index.dbf.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/.runtime/fragments/lab4/.index/index.dbf.t" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/.runtime/fragments/lab4/.index/index.dbr.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/.runtime/fragments/lab4/.index/index.dbr.t" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/.runtime/fragments/lab4/.index/index.idf.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/.runtime/fragments/lab4/.index/index.idf.t" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/.runtime/fragments/lab4/.index/index.idr.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/.runtime/fragments/lab4/.index/index.idr.t" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/.config/styles/default.style" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/.config/styles/extern.style" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/.config/styles/intern.style" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/.config/styles/main.style" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/.config/styles/modelio1x.theme" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/.config/styles/modelio2x.theme" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/.config/styles/modelio3x.theme" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/.config/styles/ramc.style" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/metadatas.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/.index/index.dbf.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/.index/index.dbf.t" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/.index/index.dbr.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/.index/index.dbr.t" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/.index/index.idf.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/.index/index.idf.t" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/.index/index.idr.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/.index/index.idr.t" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/admin/format_version.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/admin/metamodel_descriptor.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/admin/stamp.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.MetaclassReference/00bc27b8-0000-0258-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.MetaclassReference/00bc27b8-0000-02a9-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.MetaclassReference/00bc27b8-0000-037a-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.MetaclassReference/00bc27b8-0000-08c8-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.MetaclassReference/00bc27b8-0000-092f-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.MetaclassReference/00bc27b8-0000-0e0b-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.MetaclassReference/00bc2f68-0000-0f3a-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.MetaclassReference/00bc2f68-0000-0f44-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.MetaclassReference/00bc2f68-0000-0f51-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.MetaclassReference/00bc2f68-0000-0fa9-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.MetaclassReference/00bc2f68-0000-0faf-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.MetaclassReference/00bc2f68-0000-0fc2-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.MetaclassReference/00bc2f68-0000-0fd8-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.MetaclassReference/01ec045c-0000-10a1-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.MetaclassReference/01ec2468-0000-0894-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.MetaclassReference/0a139a09-a6d0-4671-a1f1-f5a17fe0f869.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.MetaclassReference/0c841642-4e99-4f0d-8a80-4f6d24bf8656.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.MetaclassReference/1b62b1eb-de82-44cb-be22-ed350ae5cf8c.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.MetaclassReference/1f889934-8d90-11df-98b9-0014224f9977.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.MetaclassReference/2d98d6ca-5644-418a-9bae-94b5362d3c51.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.MetaclassReference/3ac00e06-3921-4b35-bb60-84618d4da048.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.MetaclassReference/3d7b14d7-4de3-4b8b-8a91-00c002a833bb.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.MetaclassReference/433bb965-77f8-4b1b-9ace-864e5af81454.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.MetaclassReference/4bd5d0c9-d5de-41d0-9515-f36f0ac34454.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.MetaclassReference/7a804dc3-44ec-11e0-8f73-0027103f347c.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.MetaclassReference/8281b44e-16ea-4e9b-94d1-dc28a2be86a9.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.MetaclassReference/89c8bd8c-fa56-475b-9fe6-ffe3910cc35c.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.MetaclassReference/a27efc42-08b8-4e7d-95c6-b393e6fe5fba.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.MetaclassReference/a6e0f5bd-2649-4c75-a926-3e833fb13002.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.MetaclassReference/aeb07ec3-af96-4069-af14-0436082805ca.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.MetaclassReference/ca6d601e-7686-4e90-9b45-95d3878eddd4.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.MetaclassReference/de95a30a-def3-4199-88a5-577f867327a2.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.MetaclassReference/deb348a5-2653-11e1-9161-002564c97630.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.MetaclassReference/df3fdfd2-5ce3-4a13-b31e-01ba8c736529.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.ModuleComponent/00000000-0000-2710-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Profile/00300000-0000-0032-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Profile/007004e8-0000-0282-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Profile/01ec045c-0000-3739-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Profile/051f4291-f151-4147-99c5-fd78221f49e2.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Profile/1be2e3fc-27ca-11e1-8d9c-002564c97630.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Profile/4719c76c-91a4-4508-84fd-cef0458f4f3e.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Profile/9e140139-914b-4721-9558-385b550e28ca.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Profile/d7ea54fa-8913-11df-8dda-0014224f9977.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/00000000-0000-9c44-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/00000000-0000-9c45-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/00000000-0000-9c46-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/00000000-0000-9c48-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/00000000-0000-9c49-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/00140d80-0000-0110-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/0054070c-0000-005d-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/0054070c-0000-005f-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/00540a84-0000-0003-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/00540a84-0000-0005-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/00700680-0000-01b8-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/00700680-0000-01ba-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/00700680-0000-01bd-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/00700680-0000-01bf-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/00700680-0000-01c3-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/00700680-0000-01c5-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/00700680-0000-01c7-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/00700680-0000-01ca-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/00700680-0000-01cc-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/00700680-0000-01ce-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/00700680-0000-01d1-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/00700680-0000-01d3-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/00700680-0000-01d5-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/00700680-0000-01d7-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/00700680-0000-01d9-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/00700680-0000-01db-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/00700680-0000-01e5-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/00700680-0000-01e7-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/00700680-0000-01ef-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/00700680-0000-01f1-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/00700680-0000-01f3-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/00700680-0000-01f5-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/00700680-0000-01f7-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/00700680-0000-01f9-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/00700680-0000-01fb-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/00700680-0000-01fe-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/00700680-0000-0200-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/00700680-0000-0202-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/00700680-0000-0204-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/00700680-0000-0206-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/007006dc-0000-0137-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/007006dc-0000-0139-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/00bc0050-0000-006b-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/00d0052c-0000-0143-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/01280500-0000-0b37-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/01ec1228-0000-0964-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/01ec1228-0000-12f8-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/01ec12fc-0000-00b7-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/01ec12fc-0000-021a-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/01ec12fc-0000-021f-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/01ec12fc-0000-0224-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/01ec12fc-0000-0229-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/01ec12fc-0000-022e-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/01ec12fc-0000-0233-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/01ec12fc-0000-0238-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/01ec12fc-0000-023d-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/01ec12fc-0000-0242-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/01ec12fc-0000-0247-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/01ec12fc-0000-024c-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/01ec12fc-0000-0251-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/01ec12fc-0000-0256-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/01ec12fc-0000-025b-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/01ec12fc-0000-0260-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/01ec12fc-0000-0265-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/01ec12fc-0000-0a37-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/01ec12fc-0000-0aca-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/01ec12fc-0000-0bfd-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/01ec12fc-0000-0c02-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/01ec141c-0000-12f2-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/01ec141c-0000-12f7-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/01ec141c-0000-12fc-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/01ec141c-0000-1301-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/01ec1ac4-0000-2ef9-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/01ec1ac4-0000-2eff-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/01ec1ac4-0000-2f04-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/01ec1ac4-0000-2f09-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/01ec2468-0000-0ac1-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/01ec2468-0000-0ac6-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/021863a9-f3db-11df-8ada-0027103f347c.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/0226fd5c-caf5-4cb4-b25c-06e493b37b2d.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/06edcdd9-c2fd-11de-8ac8-001302895b2b.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/07111319-1fd7-11df-948e-001302895b2b.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/07ba6521-5d0d-11df-a996-001302895b2b.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/0936024c-9d51-4bc0-99b5-e8f72ae60007.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/0ac7e50f-50c6-4eb6-9107-3d9df92a2b75.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/0bd72298-5d08-11df-a996-001302895b2b.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/120a35e7-c2fd-11de-8ac8-001302895b2b.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/143b4e00-fe2e-44d0-9c64-5a95e385ec5a.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/15d2108f-5d0c-11df-a996-001302895b2b.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/19d2deba-a7b7-4818-8d19-aa8b2d63dba1.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/1a4b1794-3302-4d19-9d02-077990211db2.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/1abd18db-c2fd-11de-8ac8-001302895b2b.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/1b1ba62d-205e-11df-948e-001302895b2b.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/1b7fd53f-205e-11df-948e-001302895b2b.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/1c0bf642-a90f-11de-8613-001302895b2b.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/216c1c7f-0ffc-453c-9559-41aeff7e3510.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/229bc921-c2fd-11de-8ac8-001302895b2b.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/27ac6d48-32c8-11e0-91f3-0027103f347c.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/2961d57b-5120-11de-bbaf-00218648fa3d.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/2eb4ec1b-c2fd-11de-8ac8-001302895b2b.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/3254be34-c7d8-4018-8a68-5de65c30b773.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/33ea7558-fb93-11df-8b5e-0027103f347c.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/35b84299-c2fd-11de-8ac8-001302895b2b.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/37d0688a-c308-11de-8ac8-001302895b2b.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/388ba911-9fb3-4117-80af-6099142d7816.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/3b4dc351-ccaa-47b8-af57-8434f8e0e5f5.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/3c4678f8-f169-11df-ae59-0014224f9977.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/3e7476cd-bea2-4e73-a1c3-625c341464cd.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/3edfb381-5d0d-11df-a996-001302895b2b.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/3f03c5f1-c308-11de-8ac8-001302895b2b.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/40400bbd-0b5d-11df-8680-001302895b2b.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/407d1bab-d29f-4f92-b12f-01283c1cc7eb.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/435869cb-c2fd-11de-8ac8-001302895b2b.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/4a427283-5d09-11df-a996-001302895b2b.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/4b4745a9-5d0c-11df-a996-001302895b2b.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/4e477e48-35b4-11df-9280-001302895b2b.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/4edcbbef-5d0a-11df-a996-001302895b2b.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/52d7cccb-c2fd-11de-8ac8-001302895b2b.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/554cb8bb-5d0e-11df-a996-001302895b2b.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/5582e283-c2f9-11de-8ac8-001302895b2b.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/5791cd76-03ec-11e2-9c63-0027103f347d.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/5d167c0f-df53-11de-b2b1-001302895b2b.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/5d357779-c2fd-11de-8ac8-001302895b2b.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/5de33d2a-ed28-439c-aa09-d11bf1a6d878.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/61222898-ff82-4681-a82f-a8f14c479dd1.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/616b72d4-1d47-49e1-a381-2e6ecfea637c.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/641a5778-89a9-11df-9978-0014224f9977.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/6432b987-256f-4121-9428-a89d364c2cef.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/67694a37-c2f9-11de-8ac8-001302895b2b.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/679a9417-8f06-4255-a409-1e1f7136e418.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/68c63e60-70d6-11e0-872f-0027103f347c.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/6a3f6989-c2fd-11de-8ac8-001302895b2b.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/6e2770bf-c2f9-11de-8ac8-001302895b2b.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/6f3c6234-52b8-11df-a320-001302895b2b.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/6faa55e3-5d0b-11df-a996-001302895b2b.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/72ada667-0b7f-4421-bd69-9b037642ed87.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/744f6321-c2f9-11de-8ac8-001302895b2b.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/74d7cf69-58eb-48e4-b71a-e5bb0f7570f7.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/769b4d1b-614e-4503-892c-b59d0de23158.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/76c174ab-c2fd-11de-8ac8-001302895b2b.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/76f275f9-32d9-11e0-91f3-0027103f347c.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/770df309-5d0c-11df-a996-001302895b2b.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/7a7f049a-6b5f-4db9-9f79-8e327ca90297.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/859f8b76-5acc-4a9c-a5eb-973467388b13.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/86630901-a400-4353-8b38-6db0846d1e38.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/86eada10-32d9-11e0-91f3-0027103f347c.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/8914ba10-818c-4439-8e2b-89671c2288bc.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/89326f2e-c2fc-11de-8ac8-001302895b2b.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/89927bbf-c2f9-11de-8ac8-001302895b2b.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/8c44d73d-5d0b-11df-a996-001302895b2b.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/8e76c95f-5821-11df-be59-001302895b2b.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/8ed6276e-5821-11df-be59-001302895b2b.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/8fb43b1c-7819-11e1-a4f1-002564c97630.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/90a0e341-5d0d-11df-a996-001302895b2b.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/946458b2-daf1-44b8-887b-12a0d9e5c2f6.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/94b7efa5-f94c-4d1d-896f-f103e56a8e2e.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/994fc1e3-c2f9-11de-8ac8-001302895b2b.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/99bf7919-5d09-11df-a996-001302895b2b.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/9fb5321d-c2fc-11de-8ac8-001302895b2b.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/a1a154ca-b239-4724-9953-8ca651e3ee64.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/a46b20b8-26ab-11df-ac88-001302895b2b.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/a74178fb-df2b-11de-905b-001302895b2b.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/a81a2a04-07b3-4a26-8b1e-5b4ebaa67990.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/aa99ee06-c495-11de-ada1-001302895b2b.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/ad46ab04-9310-11df-a4cf-0014224f9977.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/b071b025-c2fc-11de-8ac8-001302895b2b.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/b355cc6c-c4aa-11df-b100-001302895b2b.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/b9654705-c2f9-11de-8ac8-001302895b2b.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/b966e108-5fbe-4990-b7cf-94d258a5c3ff.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/bae91a3b-7009-11e0-a462-0027103f347c.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/bdfb2aae-89a6-49b6-9a0d-3a5e4519cb31.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/c0f03827-5d0b-11df-a996-001302895b2b.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/c2d2a1ec-2c29-453c-a79c-19e4f2d27f13.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/c2e23680-96f0-11de-a322-001fe2c988b8.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/c3862c6c-5983-4d1a-b0e2-58dd2685eda0.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/c4b3add1-c2f9-11de-8ac8-001302895b2b.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/c6a579b6-5d0d-11df-a996-001302895b2b.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/c7ba7024-eff5-4039-a4d4-c9ddcd0a3aed.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/cf671bc3-c2f9-11de-8ac8-001302895b2b.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/d09356f1-c2fc-11de-8ac8-001302895b2b.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/d4d4a0b8-fb19-4b78-bc9e-e04ad77087f8.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/d5bccf8e-79b3-48df-8c79-09200aa52d19.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/de38398e-c746-11e1-8624-0027103f347d.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/e0ff915d-8d3f-4da8-84be-5aed471a16c5.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/e1d2f141-a387-4fd1-bff7-3f7dcbcb8718.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/e4358003-f3da-11df-8ada-0027103f347c.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/e445c33b-de99-11de-905b-001302895b2b.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/e4c6c55f-c2fc-11de-8ac8-001302895b2b.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/e5076ee8-b071-4433-a25d-4d8cdddead0a.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/eb8f06b7-de86-11de-905b-001302895b2b.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/ec22d8ff-de86-11de-905b-001302895b2b.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/ed0bb1c3-de99-11de-905b-001302895b2b.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/ed95fa9b-de99-11de-905b-001302895b2b.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/edc05471-5d08-11df-a996-001302895b2b.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/ee06097f-de99-11de-905b-001302895b2b.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/ee97796b-de99-11de-905b-001302895b2b.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/f5d2927d-46d6-4d87-9cf2-adb4a47ca929.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/f82bed81-afcc-41fc-b014-b9ce92bb5377.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/f8e58a85-c2fa-11de-8ac8-001302895b2b.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/f9061fa3-c2fc-11de-8ac8-001302895b2b.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/fca54004-5d0d-11df-a996-001302895b2b.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/fdbc7d78-32c7-11e0-91f3-0027103f347c.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/ModelerModule/content/model/model/Infrastructure.Stereotype/ff6e0375-5d09-11df-a996-001302895b2b.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/metadatas.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/.index/index.dbf.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/.index/index.dbf.t" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/.index/index.dbr.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/.index/index.dbr.t" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/.index/index.idf.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/.index/index.idf.t" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/.index/index.idr.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/.index/index.idr.t" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/admin/format_version.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/admin/metamodel_descriptor.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/admin/stamp.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/model/Infrastructure.EnumeratedPropertyType/00080cf0-0000-0031-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/model/Infrastructure.EnumeratedPropertyType/00080cf0-0000-0032-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/model/Infrastructure.EnumeratedPropertyType/00080cf0-0000-00bc-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/model/Infrastructure.EnumeratedPropertyType/00bc470c-0000-001b-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/model/Infrastructure.EnumeratedPropertyType/00bc470c-0000-002a-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/model/Infrastructure.EnumeratedPropertyType/00bc470c-0000-0035-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/model/Infrastructure.EnumeratedPropertyType/01ec152c-0000-3152-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/model/Infrastructure.EnumeratedPropertyType/22ea1bb3-4c78-4727-95a9-71e65513e8e7.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/model/Infrastructure.EnumeratedPropertyType/9de3f89f-1f06-49c6-81dd-70fef0827247.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/model/Infrastructure.EnumeratedPropertyType/f98047ab-24f3-4b41-adbb-3cb70791184a.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/model/Infrastructure.EnumeratedPropertyType/fd1e7e3d-1c25-4e43-a8d0-23ad542da716.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/model/Infrastructure.MetaclassReference/26202dfe-e27f-4e4b-86af-5b5674789cfa.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/model/Infrastructure.MetaclassReference/2f3f67a5-aa55-4e94-b06c-c0049cc441a3.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/model/Infrastructure.MetaclassReference/30575a3d-e94f-4961-8e1a-322e6ef715f3.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/model/Infrastructure.MetaclassReference/3dba9db3-4b58-48b3-a0c4-e1c0b5ee4bb0.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/model/Infrastructure.MetaclassReference/67c9ea5a-e2ef-4de8-8709-168cb4761925.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/model/Infrastructure.MetaclassReference/784a8816-a842-481c-8c39-adc2b56937f6.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/model/Infrastructure.MetaclassReference/8079c249-64e2-400c-be64-22f5fb91f5f4.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/model/Infrastructure.MetaclassReference/891efe05-a810-4775-b640-086edf0fa440.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/model/Infrastructure.MetaclassReference/8f3a3b64-7786-48fe-ad6b-dc677d2d46d2.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/model/Infrastructure.MetaclassReference/94e37836-0c23-4e6d-b24d-a9479125f7ed.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/model/Infrastructure.MetaclassReference/a3058bf7-4876-431d-89b2-c3749553219b.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/model/Infrastructure.MetaclassReference/a6ad9e37-0267-4596-bf06-e6035f272dcf.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/model/Infrastructure.MetaclassReference/c4765445-f378-4680-b8b2-22acdfe8e06e.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/model/Infrastructure.MetaclassReference/c89ec210-d0c9-43f8-8fe9-740622c71ec8.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/model/Infrastructure.MetaclassReference/d6710577-3450-4e9e-b6c6-93300ae3f8e5.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/model/Infrastructure.MetaclassReference/d7de0649-dc13-499c-a02e-4bd1b407cb44.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/model/Infrastructure.ModuleComponent/771a9097-ec5c-4f47-a0c5-ece628a044e6.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/model/Infrastructure.Profile/943cfd4f-cbbb-45d2-ac27-2d2f8bd419c5.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/model/Infrastructure.PropertyTableDefinition/00080cf0-0000-001a-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/model/Infrastructure.PropertyTableDefinition/00080cf0-0000-001b-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/model/Infrastructure.PropertyTableDefinition/00080cf0-0000-001c-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/model/Infrastructure.PropertyTableDefinition/00080cf0-0000-001d-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/model/Infrastructure.PropertyTableDefinition/00080cf0-0000-001e-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/model/Infrastructure.PropertyTableDefinition/00080cf0-0000-001f-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/model/Infrastructure.PropertyTableDefinition/00080cf0-0000-0020-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/model/Infrastructure.PropertyTableDefinition/00bc470c-0000-0018-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/model/Infrastructure.PropertyTableDefinition/00bc470c-0000-0019-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/model/Infrastructure.PropertyTableDefinition/01ec152c-0000-144f-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/model/Infrastructure.PropertyTableDefinition/2b47f78a-d258-422c-99a8-d54529fe0344.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/model/Infrastructure.PropertyTableDefinition/7649b5c8-8733-4a02-959c-a269422402b8.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/model/Infrastructure.PropertyTableDefinition/84b2bd9b-6fcf-4ee4-af8e-f1319276a311.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/model/Infrastructure.PropertyTableDefinition/897d11ed-d82c-4037-9a24-9b1b9e56cd3a.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/model/Infrastructure.PropertyTableDefinition/eb3dbc2d-8e8a-40e4-9f8c-3cfd64a04944.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/model/Infrastructure.PropertyTableDefinition/ee295439-adfb-4038-9ad2-9e643a37e076.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/model/Infrastructure.PropertyType/00080cf0-0000-00cf-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/model/Infrastructure.PropertyType/01a40888-0000-002a-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/model/Infrastructure.PropertyType/01a40888-0000-002b-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/model/Infrastructure.PropertyType/01a40888-0000-002d-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/model/Infrastructure.PropertyType/136b356c-3951-473b-aa4a-001c0241b996.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/model/Infrastructure.PropertyType/1bdf9f87-e9ad-4849-ab22-c25147e8d00c.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/model/Infrastructure.PropertyType/753fc9f9-c136-449c-949c-4fa467511d99.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/model/Infrastructure.PropertyType/827950f7-671f-4db7-9374-23df864712ef.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/model/Infrastructure.PropertyType/b58969db-144e-4a1f-b946-cd6deacca9bd.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/model/Infrastructure.PropertyType/bc36b99e-8470-4aee-ba2a-5012c0a17525.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/model/Infrastructure.PropertyType/c37f01cf-273e-11e1-b78e-00137282c51b.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/model/Infrastructure.PropertyType/fd461312-91e1-4589-a042-c814e1f53e6a.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/model/Standard.Artifact/4bb461ab-1cb8-4e47-ab98-5ab266bd55cb.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/model/Standard.DataType/00000004-0000-0005-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/model/Standard.DataType/00000004-0000-0007-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/model/Standard.DataType/00000004-0000-0009-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/model/Standard.DataType/00000004-0000-000b-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/model/Standard.DataType/00000004-0000-000d-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/model/Standard.DataType/00000004-0000-000f-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/model/Standard.DataType/00000004-0000-0010-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/model/Standard.DataType/00000004-0000-0011-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/model/Standard.DataType/00000004-0000-0012-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/model/Standard.DataType/00000004-0000-0013-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/model/Standard.DataType/00000004-0000-0014-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/model/Standard.Package/00000004-0000-0004-0000-000000000000.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/PredefinedTypes 3.9.00/content/model/model/Standard.Project/af249ca6-918c-4754-8097-cdd171d8a4e7.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/lab4/admin/format_version.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/lab4/admin/metamodel_descriptor.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/lab4/admin/mmversion.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/lab4/admin/stamp.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/lab4/model/Infrastructure.DiagramSet/98e07b85-a861-42ae-9a10-29563e6df265.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/lab4/model/Infrastructure.ModuleComponent/b6454aa1-f93d-479a-b05d-20bf3189c3ff.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/lab4/model/Infrastructure.Profile/f9130c45-adda-4dd3-a4cf-feb7e5bcbf8e.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/lab4/model/Standard.Package/39756065-b015-411d-bfd9-213d53314cde.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/fragments/lab4/model/Standard.Project/13e2cf0f-ae0a-4025-879e-1beb6985c78a.exml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/localmodel/localmodel.dbf.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/localmodel/localmodel.dbf.t" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/localmodel/localmodel.dbr.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/localmodel/localmodel.dbr.t" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/localmodel/localmodel.idf.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/localmodel/localmodel.idf.t" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/localmodel/localmodel.idr.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/data/localmodel/localmodel.idr.t" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/lab4/project.conf" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,7 +418,20 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Lab1_Diagrams" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -37,6 +447,7 @@
       <workItem from="1602666113930" duration="390000" />
       <workItem from="1603787811202" duration="610000" />
       <workItem from="1608818212218" duration="72000" />
+      <workItem from="1610307692469" duration="2312000" />
     </task>
     <servers />
   </component>

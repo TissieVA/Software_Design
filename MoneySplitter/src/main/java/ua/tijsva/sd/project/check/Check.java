@@ -14,7 +14,7 @@ public class Check
     private Database<Ticket> ticketDb;
     private Database<Person> personDb;
     private HashMap<UUID, Double> totalCheck;
-    ArrayList<String> solution = new ArrayList<>();
+    private ArrayList<String> solution = new ArrayList<>();
 
     public Check(Database<Ticket> ticketDb, Database<Person> personDb)
     {
@@ -45,31 +45,27 @@ public class Check
         return totalCheck;
     }
 
-    public void whoOwesWho(HashMap<UUID, Double> listing)
+    //following method based on https://github.com/soumyasethy/ShortestPath-CashFlow-Algorithm-Splitwise
+    private void whoOwesWho(HashMap<UUID, Double> listing)
     {
 
-        Double maxPrice = (Double) Collections.max(listing.values());
-        Double minPrice = (Double) Collections.min(listing.values());
+        Double maxPrice = Collections.max(listing.values());
+        Double minPrice = Collections.min(listing.values());
         if(Math.abs(maxPrice-minPrice)>0.1)
         {
             UUID maxPricePerson = getKeyFromValue(listing, maxPrice);
             UUID minPricePerson = getKeyFromValue(listing, minPrice);
-            Double result = maxPrice + minPrice;
+            double result = maxPrice + minPrice;
             result = Math.round(result* 100.0)/100.0;
             if(result>=0.1)
             {
                 solution.add(String.format("%s -> %s : %.2f\n",Database.getPersonDB().get(minPricePerson).getName(),Database.getPersonDB().get(maxPricePerson).getName(),Math.abs(minPrice)));
-
-                listing.remove(maxPricePerson);
-                listing.remove(minPricePerson);
                 listing.put(maxPricePerson, result);
                 listing.put(minPricePerson, 0.0);
             }
             else
             {
                 solution.add(String.format("%s -> %s : %.2f\n",Database.getPersonDB().get(minPricePerson).getName(),Database.getPersonDB().get(maxPricePerson).getName(),Math.abs(maxPrice)));
-                listing.remove(maxPricePerson);
-                listing.remove(minPricePerson);
                 listing.put(minPricePerson, result);
                 listing.put(maxPricePerson, 0.0);
             }
@@ -82,7 +78,7 @@ public class Check
         this.totalCheck = calculateCheck();
         solution.clear();
         whoOwesWho(this.totalCheck);
-        StringBuilder string = new StringBuilder("");
+        StringBuilder string = new StringBuilder();
 
         solution.forEach(string::append);
         return string.toString();

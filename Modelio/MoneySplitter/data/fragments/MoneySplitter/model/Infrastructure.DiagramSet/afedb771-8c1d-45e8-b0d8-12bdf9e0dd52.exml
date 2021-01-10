@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="MoneySplitter" version="4">
+  <OBJECT>
+    <ID name="MoneySplitter" mc="Infrastructure.DiagramSet" uid="afedb771-8c1d-45e8-b0d8-12bdf9e0dd52"/>
+    <PID name="MoneySplitter" mc="Standard.Project" uid="5778d3d2-c776-42ad-ae3e-33ac9e66aee9"/>
+    <ATTRIBUTES>
+      <ATT name="Name"><![CDATA[MoneySplitter]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

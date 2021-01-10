@@ -1,0 +1,47 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="util" version="4">
+  <OBJECT>
+    <ID name="util" mc="Standard.Package" uid="e63361f7-4a57-48df-aee5-e8ba070e96ca"/>
+    <PID name="java" mc="Standard.Package" uid="5a631a20-41ad-4f62-9324-2546921f6c7d"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[util]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="List" mc="Standard.Interface" uid="512d442e-962b-49b6-929e-66966442cb25"/>
+        <COMPID name="UUID" mc="Standard.Class" uid="6977f31a-8440-4371-accb-178e744ef481"/>
+        <COMPID name="HashMap" mc="Standard.Class" uid="08d17bf4-cd26-4e5b-ae40-679fe650867d"/>
+        <COMPID name="function" mc="Standard.Package" uid="c53b5205-5a66-4b16-90d6-4bdc145bbbd7"/>
+        <COMPID name="Spliterator" mc="Standard.Interface" uid="9071de52-6d31-4c8f-9236-42a64498d2c5"/>
+        <COMPID name="Iterator" mc="Standard.Interface" uid="9d6f149a-9384-4c36-a2ba-7fdd2ff0a2b1"/>
+        <COMPID name="Observable" mc="Standard.Class" uid="5ed91e1b-4ab3-409d-b4cf-ef213ab6eda3"/>
+        <COMPID name="ArrayList" mc="Standard.Class" uid="fe0b00a0-1923-4160-afb7-518c9b481926"/>
+        <COMPID name="Collections" mc="Standard.Class" uid="878fd2a8-bee4-4fc7-92cf-7814008d3e16"/>
+        <COMPID name="stream" mc="Standard.Package" uid="f6013324-a9f0-4668-8530-0c2983da8fb4"/>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="JavaPackage" mc="Infrastructure.Stereotype" uid="01ec23a8-0000-0126-0000-000000000000"/>
+      </LINK>
+      <COMP relation="Tag">
+        <OBJECT>
+          <ID name="" mc="Infrastructure.TaggedValue" uid="a015521f-904c-4f60-80f0-ebbdce2a35b2"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Definition">
+              <FOREIGNID name="JavaExtern" mc="Infrastructure.TagType" uid="003800a8-0000-0197-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

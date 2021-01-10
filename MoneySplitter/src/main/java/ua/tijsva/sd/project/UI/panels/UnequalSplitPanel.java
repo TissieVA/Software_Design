@@ -1,7 +1,5 @@
 package ua.tijsva.sd.project.UI.panels;
 
-import javafx.scene.control.ComboBox;
-import jdk.internal.org.objectweb.asm.tree.TryCatchBlockNode;
 import ua.tijsva.sd.project.controller.Controller;
 import ua.tijsva.sd.project.database.Database;
 import ua.tijsva.sd.project.person.Person;

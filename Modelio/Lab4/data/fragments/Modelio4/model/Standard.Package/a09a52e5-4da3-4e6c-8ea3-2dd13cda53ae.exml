@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="lab4b" version="4">
+  <OBJECT>
+    <ID name="lab4b" mc="Standard.Package" uid="a09a52e5-4da3-4e6c-8ea3-2dd13cda53ae"/>
+    <PID name="Modelio4" mc="Standard.Project" uid="70c80aab-176c-4e5d-99a3-6abf9df77ba8"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[lab4b]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Main" mc="Standard.Class" uid="26b73e7a-6703-4e26-b79d-d8ce47afe305"/>
+        <COMPID name="TeslaFactory" mc="Standard.Interface" uid="00c1b163-0e3e-4c81-bad2-d44879e61a1e"/>
+        <COMPID name="FactorProvider" mc="Standard.Class" uid="f2b32924-008a-454a-b1cb-d9032dd9b6ee"/>
+        <COMPID name="Model3Factory" mc="Standard.Class" uid="7c088c1e-c58c-4116-8a43-e664406bdd88"/>
+        <COMPID name="ModelXFactory" mc="Standard.Class" uid="34307390-0162-448f-bb0d-910903ed0439"/>
+        <COMPID name="ModelYFactory" mc="Standard.Class" uid="a74a0144-4eac-4bd6-9464-a357c1b26e8f"/>
+        <COMPID name="ModelSFactory" mc="Standard.Class" uid="f110a47a-5c23-4058-8410-51c0a4710899"/>
+        <COMPID name="Tesla" mc="Standard.Class" uid="431fd585-e93a-477f-b3be-9ee535b78ae9"/>
+        <COMPID name="Model3" mc="Standard.Class" uid="2619c32c-fcda-4258-b200-a71a66ca81ff"/>
+        <COMPID name="ModelX" mc="Standard.Class" uid="ed26e2df-54bf-40d6-9de5-d6ec95a5d737"/>
+        <COMPID name="ModelY" mc="Standard.Class" uid="b5b64956-0b80-494c-a6e4-165b075a2dd2"/>
+        <COMPID name="ModelS" mc="Standard.Class" uid="fed2d606-ef17-4757-8117-fea6f69f0319"/>
+        <COMPID name="Model3_Black" mc="Standard.Class" uid="270e2624-32fc-4f9d-b06a-d40a938fa028"/>
+        <COMPID name="Model3_Red" mc="Standard.Class" uid="1a847d9e-cd9e-4029-8f69-a4fda30fb043"/>
+        <COMPID name="ModelX_Black" mc="Standard.Class" uid="f3f51d79-c58b-4b79-ace9-8d99871742e7"/>
+        <COMPID name="ModelX_Red" mc="Standard.Class" uid="6128d211-36f2-40ac-8e74-18e9b117d517"/>
+        <COMPID name="ModelY_Red" mc="Standard.Class" uid="2ea7ffa7-af3c-4a6e-91a8-527f8fb6b8dd"/>
+        <COMPID name="ModelY_Black" mc="Standard.Class" uid="1772bed7-e5b2-47ba-b328-b18cb00a1fa1"/>
+        <COMPID name="ModelS_Black" mc="Standard.Class" uid="4edd7a78-65d8-4126-8383-765ded1e15c0"/>
+        <COMPID name="ModelS_Red" mc="Standard.Class" uid="2beb1f30-4d42-48db-9d59-1c7df05cebd1"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Lab4b Class diagram" mc="Standard.ClassDiagram" uid="12c25247-404d-4749-aa26-ee87b45e6901"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
